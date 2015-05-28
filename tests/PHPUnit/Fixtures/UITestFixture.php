@@ -8,6 +8,7 @@
 namespace Piwik\Tests\Fixtures;
 
 use Exception;
+use Piwik\API\Request;
 use Piwik\AssetManager;
 use Piwik\Access;
 use Piwik\Common;
@@ -20,9 +21,6 @@ use Piwik\Plugins\SegmentEditor\API as APISegmentEditor;
 use Piwik\Plugins\UsersManager\API as UsersManagerAPI;
 use Piwik\Plugins\SitesManager\API as SitesManagerAPI;
 use Piwik\Tests\Framework\Fixture;
-use Piwik\WidgetsList;
-use Piwik\Tests\Framework\OverrideLogin;
-use Piwik\Tests\Framework\TestCase\SystemTestCase;
 
 /**
  * Fixture for UI tests.
@@ -197,7 +195,12 @@ class UITestFixture extends SqlDump
 
         // collect widgets & sort them so widget order is not important
         $allWidgets = array();
-        foreach (WidgetsList::get() as $category => $widgets) {
+        $widgetsList = Request::processRequest('API.getWidgetMetadata', array(
+            'idSite' => 1,
+            'period' => 'day',
+            'date' => 'today'
+        ));
+        foreach ($widgetsList as $category => $widgets) {
             $allWidgets = array_merge($allWidgets, $widgets);
         }
         usort($allWidgets, function ($lhs, $rhs) {

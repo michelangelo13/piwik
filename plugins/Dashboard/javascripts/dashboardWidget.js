@@ -70,7 +70,7 @@
          */
         destroy: function () {
             if (this.isMaximised) {
-                $('[widgetId=' + this.uniqueId + ']').dialog('destroy');
+                $('[widgetId="' + this.uniqueId + '"]').dialog('destroy');
             }
             $('*', this.element).off('.dashboardWidget'); // unbind all events
             $('.widgetContent', this.element).trigger('widget:destroy');

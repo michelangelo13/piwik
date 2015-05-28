@@ -1,0 +1,21 @@
+<div>
+    <h2 ng-if="widget.name"
+        piwik-enriched-headline
+        feature-name="{{widget.name}}">{{ widget.name }}</h2>
+
+    <div ng-show="!widget.isContainer && loading" class="loadingPiwik">
+        <img src="plugins/Morpheus/images/loading-blue.gif" alt=""/>{{ 'General_LoadingData'|translate }}
+    </div>
+
+    <div ng-show="!widget.isContainer && loadingFailed">Failed to load</div>
+
+    <div ng-if="!widget.isContainer" ng-include="widget.html_url"></div>
+
+    <div ng-if="widget.isContainer && widget.layout!='ByDimension'">
+        <div piwik-widget-container container="widget"></div>
+    </div>
+
+    <div ng-if="widget.isContainer && widget.layout=='ByDimension'">
+        <div piwik-widget-by-dimension-container container="widget"></div>
+    </div>
+</div>

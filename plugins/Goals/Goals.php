@@ -9,12 +9,10 @@
 namespace Piwik\Plugins\Goals;
 
 use Piwik\ArchiveProcessor;
-use Piwik\Common;
 use Piwik\Db;
 use Piwik\Piwik;
 use Piwik\Plugin\Report;
 use Piwik\Tracker\GoalManager;
-use Piwik\Translate;
 
 /**
  *
@@ -98,7 +96,7 @@ class Goals extends \Piwik\Plugin
             'SitesManager.deleteSite.end'            => 'deleteSiteGoals',
             'Goals.getReportsWithGoalMetrics'        => 'getActualReportsWithGoalMetrics',
             'Translate.getClientSideTranslationKeys' => 'getClientSideTranslationKeys',
-            'Metrics.getDefaultMetricTranslations'   => 'addMetricTranslations'
+            'Metrics.getDefaultMetricTranslations'   => 'addMetricTranslations',
         );
         return $hooks;
     }
@@ -179,7 +177,7 @@ class Goals extends \Piwik\Plugin
         foreach (Report::getAllReports() as $report) {
             if ($report->hasGoalMetrics()) {
                 $reportsWithGoals[] = array(
-                    'category' => $report->getCategoryKey(),
+                    'category' => $report->getCategory(),
                     'name'     => $report->getName(),
                     'module'   => $report->getModule(),
                     'action'   => $report->getAction(),
@@ -271,5 +269,6 @@ class Goals extends \Piwik\Plugin
         $translationKeys[] = 'Goals_DeleteGoalConfirm';
         $translationKeys[] = 'Goals_Ecommerce';
         $translationKeys[] = 'Goals_Optional';
+        $translationKeys[] = 'Goals_ChooseGoal';
     }
 }

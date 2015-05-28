@@ -14,15 +14,63 @@ function widgetsHelper() {
  * @return {object} object containing available widgets
  */
 widgetsHelper.getAvailableWidgets = function () {
+
+    function mergeCategoriesAndSubCategories(availableWidgets)
+    {
+        var categorized = {};
+
+        $.each(availableWidgets, function (index, widget) {
+            var category = widget.category.name;
+
+            if (!categorized[category]) {
+                categorized[category] = {'-': []};
+            }
+
+            var subcategory = '-';
+            if (widget.subcategory && widget.subcategory.name) {
+                subcategory = widget.subcategory.name;
+            }
+
+            if (!categorized[category][subcategory]) {
+                categorized[category][subcategory] = [];
+            }
+
+            categorized[category][subcategory].push(widget);
+        });
+
+        var moved = {};
+
+        $.each(categorized, function (category, widgets) {
+            $.each(widgets, function (subcategory, subwidgets) {
+
+                var categoryToUse = category;
+                if (subwidgets.length >= 3 && subcategory !== '-') {
+                    categoryToUse = category + ' - ' + subcategory;
+                }
+
+                if (!moved[categoryToUse]) {
+                    moved[categoryToUse] = [];
+                }
+
+                $.each(subwidgets, function (index, widget) {
+                    moved[categoryToUse].push(widget);
+                });
+            });
+        });
+
+        return moved;
+    }
+
     if (!widgetsHelper.availableWidgets) {
         var ajaxRequest = new ajaxHelper();
         ajaxRequest.addParams({
-            module: 'Dashboard',
-            action: 'getAvailableWidgets'
+            module: 'API',
+            method: 'API.getWidgetMetadata',
+            format: 'JSON'
         }, 'get');
         ajaxRequest.setCallback(
             function (data) {
-                widgetsHelper.availableWidgets = data;
+                widgetsHelper.availableWidgets = mergeCategoriesAndSubCategories(data);
             }
         );
         ajaxRequest.send(true);
@@ -191,6 +239,7 @@ widgetsHelper.loadWidgetAjax = function (widgetUniqueId, widgetParameters, onWid
              * @return {$} category list element
              */
             function createWidgetCategoryList(widgetPreview, availableWidgets) {
+
                 var settings = widgetPreview.settings;
 
                 if (!$('.' + settings.categorylistClass, widgetPreview).length) {
@@ -200,7 +249,6 @@ widgetsHelper.loadWidgetAjax = function (widgetUniqueId, widgetParameters, onWid
                 }
 
                 for (var widgetCategory in availableWidgets) {
-
                     $('.' + settings.categorylistClass, widgetPreview).append('<li>' + widgetCategory + '</li>');
                 }
 
@@ -335,7 +383,8 @@ widgetsHelper.loadWidgetAjax = function (widgetUniqueId, widgetParameters, onWid
                 previewElement.html(emptyWidgetHtml);
 
                 var onWidgetLoadedCallback = function (response) {
-                    var widgetElement = $('#' + widgetUniqueId);
+                    var widgetElement = $(document.getElementById(widgetUniqueId));
+                    // document.getElementById needed for widgets with uniqueid like widgetOpens+Contact+Form
                     $('.widgetContent', widgetElement).html($(response));
                     $('.widgetContent', widgetElement).trigger('widget:create');
                     settings.onPreviewLoaded(widgetUniqueId, widgetElement);

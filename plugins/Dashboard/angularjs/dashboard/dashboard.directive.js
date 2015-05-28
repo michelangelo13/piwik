@@ -33,7 +33,7 @@
                 .dashboard({
                     idDashboard: dashboardId,
                     layout: layout,
-                    name: dashboard.name
+                    name: dashboard ? dashboard.name : ''
                 });
 
             $('#columnPreview').find('>div').each(function () {
@@ -68,8 +68,8 @@
         }
 
         function clearDashboard () {
-            $('#dashboardWidgetsArea').dashboard('destroy');
             $('.top_controls .dashboard-manager').hide();
+            $('#dashboardWidgetsArea').dashboard('destroy');
         }
 
         return {
@@ -88,7 +88,7 @@
 
                 // should be rather handled in route or so.
                 var unbind = $rootScope.$on('$locationChangeSuccess', clearDashboard);
-                scope.$on('$destroy', clearDashboard);
+                scope.$on('$destroy', clearDashboard());
                 scope.$on('$destroy', unbind);
             }
         };

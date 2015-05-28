@@ -14,6 +14,6 @@ abstract class Base extends Report
 {
     protected function init()
     {
-        $this->category = 'UI Framework';
+        $this->category = 'ExampleUI_UiFramework';
     }
 }

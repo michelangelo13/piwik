@@ -240,7 +240,7 @@ class API extends \Piwik\Plugin\API
         return $processed;
     }
 
-    public function getWidgetMetadata($idSite, $period, $date)
+    public function getWidgetMetadata($idSite, $period, $date, $segment = false)
     {
         Piwik::checkUserHasViewAccess($idSite);
 
@@ -249,7 +249,7 @@ class API extends \Piwik\Plugin\API
         return $metadata->getWidgetMetadata($idSite);
     }
 
-    public function getPagesMetadata($idSite, $period, $date)
+    public function getPagesMetadata($idSite, $period, $date, $segment = false)
     {
         Piwik::checkUserHasViewAccess($idSite);
 

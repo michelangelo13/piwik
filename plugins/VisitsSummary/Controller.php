@@ -33,7 +33,7 @@ class Controller extends \Piwik\Plugin\Controller
 
         parent::__construct();
     }
-    
+
     public function getEvolutionGraph(array $columns = array(), array $defaultColumns = array(), $callingAction = __FUNCTION__)
     {
         if (empty($columns)) {

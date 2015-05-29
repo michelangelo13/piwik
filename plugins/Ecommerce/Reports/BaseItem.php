@@ -10,6 +10,7 @@ namespace Piwik\Plugins\Ecommerce\Reports;
 
 use Piwik\API\Request;
 use Piwik\Common;
+use Piwik\DataTable;
 use Piwik\Metrics\Formatter;
 use Piwik\Piwik;
 use Piwik\Plugin\Report;
@@ -91,17 +92,15 @@ abstract class BaseItem extends Base
             return false;
         }
 
-        $request = new Request(array(
-            'method' => 'Goals.get',
-            'format' => 'original',
+        $datatable = Request::processRequest('Goals.get', array(
             'idGoal' => $idGoal,
             'period' => $period,
             'date' => $date,
             'idSite' => $idSite,
+            'serialize' => 0,
             'segment' => false
         ));
 
-        $datatable = $request->process();
         $dataRow = $datatable->getFirstRow();
 
         if (!$dataRow) {

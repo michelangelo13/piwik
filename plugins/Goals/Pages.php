@@ -276,13 +276,12 @@ class Pages
             return false;
         }
 
-        $request = new Request(array(
-            'method' => 'Goals.get',
-            'format' => 'original',
+        $datatable = Request::processRequest('Goals.get', array(
             'idGoal' => $idGoal,
             'period' => $period,
             'date' => $date,
             'idSite' => $idSite,
+            'serialize' => 0,
             'segment' => false
         ));
 

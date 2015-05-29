@@ -4,6 +4,7 @@
 	<prettyDate>Saturday 6 March 2010</prettyDate>
 	<metadata>
 		<category>Visitors</category>
+		<subcategory>Overview</subcategory>
 		<name>Visits Summary</name>
 		<module>VisitsSummary</module>
 		<action>get</action>

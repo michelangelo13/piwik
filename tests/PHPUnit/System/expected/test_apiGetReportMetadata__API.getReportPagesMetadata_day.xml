@@ -2868,34 +2868,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Websites</name>
-						<category>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</category>
-						<subcategory>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</subcategory>
-						<module>Referrers</module>
-						<action>getWebsites</action>
-						<order>105</order>
-						<parameters>
-							<module>Referrers</module>
-							<action>getWebsites</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Search Engines</name>
 						<category>
 							<name>View goals by Referrers</name>
@@ -2920,6 +2892,34 @@
 						</parameters>
 						<widget_url>?module=Referrers&amp;action=getSearchEngines&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetReferrersgetSearchEnginesmoduleReferrersactiongetSearchEnginesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Websites</name>
+						<category>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</category>
+						<subcategory>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</subcategory>
+						<module>Referrers</module>
+						<action>getWebsites</action>
+						<order>105</order>
+						<parameters>
+							<module>Referrers</module>
+							<action>getWebsites</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -2952,7 +2952,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Visits to Conversion</name>
+						<name>Abandoned Carts - Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -2965,7 +2965,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>105</order>
+						<order>120</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -2980,7 +2980,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Days to Conversion</name>
+						<name>Abandoned Carts - Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -2993,7 +2993,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>110</order>
+						<order>125</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -3005,6 +3005,34 @@
 						<widget_url>?module=Goals&amp;action=getDaysToConversion&amp;forceView=0&amp;viewDataTable=table&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetGoalsgetDaysToConversionmoduleGoalsactiongetDaysToConversionforceView0viewDataTabletabledocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>table</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</category>
+						<subcategory>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
 					<row>
@@ -3088,34 +3116,6 @@
 						</parameters>
 						<widget_url>?module=UserCountry&amp;action=getRegion&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetUserCountrygetRegionmoduleUserCountryactiongetRegionforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -3298,34 +3298,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Websites</name>
-						<category>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</category>
-						<subcategory>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</subcategory>
-						<module>Referrers</module>
-						<action>getWebsites</action>
-						<order>105</order>
-						<parameters>
-							<module>Referrers</module>
-							<action>getWebsites</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Search Engines</name>
 						<category>
 							<name>View goals by Referrers</name>
@@ -3350,6 +3322,34 @@
 						</parameters>
 						<widget_url>?module=Referrers&amp;action=getSearchEngines&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetReferrersgetSearchEnginesmoduleReferrersactiongetSearchEnginesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Websites</name>
+						<category>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</category>
+						<subcategory>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</subcategory>
+						<module>Referrers</module>
+						<action>getWebsites</action>
+						<order>105</order>
+						<parameters>
+							<module>Referrers</module>
+							<action>getWebsites</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -3382,7 +3382,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Visits to Conversion</name>
+						<name>Abandoned Carts - Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3395,7 +3395,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>105</order>
+						<order>120</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -3410,7 +3410,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Days to Conversion</name>
+						<name>Abandoned Carts - Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3423,7 +3423,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>110</order>
+						<order>125</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -3435,6 +3435,34 @@
 						<widget_url>?module=Goals&amp;action=getDaysToConversion&amp;forceView=0&amp;viewDataTable=table&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetGoalsgetDaysToConversionmoduleGoalsactiongetDaysToConversionforceView0viewDataTabletabledocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>table</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</category>
+						<subcategory>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
 					<row>
@@ -3518,34 +3546,6 @@
 						</parameters>
 						<widget_url>?module=UserCountry&amp;action=getRegion&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetUserCountrygetRegionmoduleUserCountryactiongetRegionforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -3745,34 +3745,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Websites</name>
-						<category>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</category>
-						<subcategory>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</subcategory>
-						<module>Referrers</module>
-						<action>getWebsites</action>
-						<order>105</order>
-						<parameters>
-							<module>Referrers</module>
-							<action>getWebsites</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Search Engines</name>
 						<category>
 							<name>View goals by Referrers</name>
@@ -3797,6 +3769,34 @@
 						</parameters>
 						<widget_url>?module=Referrers&amp;action=getSearchEngines&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetReferrersgetSearchEnginesmoduleReferrersactiongetSearchEnginesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Websites</name>
+						<category>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</category>
+						<subcategory>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</subcategory>
+						<module>Referrers</module>
+						<action>getWebsites</action>
+						<order>105</order>
+						<parameters>
+							<module>Referrers</module>
+							<action>getWebsites</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -3829,7 +3829,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Visits to Conversion</name>
+						<name>Abandoned Carts - Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3842,7 +3842,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>105</order>
+						<order>120</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -3857,7 +3857,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Days to Conversion</name>
+						<name>Abandoned Carts - Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3870,7 +3870,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>110</order>
+						<order>125</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -3882,6 +3882,34 @@
 						<widget_url>?module=Goals&amp;action=getDaysToConversion&amp;forceView=0&amp;viewDataTable=table&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetGoalsgetDaysToConversionmoduleGoalsactiongetDaysToConversionforceView0viewDataTabletabledocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>table</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</category>
+						<subcategory>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
 					<row>
@@ -3965,34 +3993,6 @@
 						</parameters>
 						<widget_url>?module=UserCountry&amp;action=getRegion&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetUserCountrygetRegionmoduleUserCountryactiongetRegionforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -4174,34 +4174,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Websites</name>
-						<category>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</category>
-						<subcategory>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</subcategory>
-						<module>Referrers</module>
-						<action>getWebsites</action>
-						<order>105</order>
-						<parameters>
-							<module>Referrers</module>
-							<action>getWebsites</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Search Engines</name>
 						<category>
 							<name>View goals by Referrers</name>
@@ -4226,6 +4198,34 @@
 						</parameters>
 						<widget_url>?module=Referrers&amp;action=getSearchEngines&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetReferrersgetSearchEnginesmoduleReferrersactiongetSearchEnginesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Websites</name>
+						<category>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</category>
+						<subcategory>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</subcategory>
+						<module>Referrers</module>
+						<action>getWebsites</action>
+						<order>105</order>
+						<parameters>
+							<module>Referrers</module>
+							<action>getWebsites</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -4258,7 +4258,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Visits to Conversion</name>
+						<name>Abandoned Carts - Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4271,7 +4271,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>105</order>
+						<order>120</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -4286,7 +4286,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Days to Conversion</name>
+						<name>Abandoned Carts - Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4299,7 +4299,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>110</order>
+						<order>125</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -4311,6 +4311,34 @@
 						<widget_url>?module=Goals&amp;action=getDaysToConversion&amp;forceView=0&amp;viewDataTable=table&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetGoalsgetDaysToConversionmoduleGoalsactiongetDaysToConversionforceView0viewDataTabletabledocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>table</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</category>
+						<subcategory>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
 					<row>
@@ -4394,34 +4422,6 @@
 						</parameters>
 						<widget_url>?module=UserCountry&amp;action=getRegion&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetUserCountrygetRegionmoduleUserCountryactiongetRegionforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -4642,34 +4642,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Websites</name>
-						<category>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</category>
-						<subcategory>
-							<name>View goals by Referrers</name>
-							<order>99</order>
-							<id>View goals by Referrers</id>
-						</subcategory>
-						<module>Referrers</module>
-						<action>getWebsites</action>
-						<order>105</order>
-						<parameters>
-							<module>Referrers</module>
-							<action>getWebsites</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Search Engines</name>
 						<category>
 							<name>View goals by Referrers</name>
@@ -4694,6 +4666,34 @@
 						</parameters>
 						<widget_url>?module=Referrers&amp;action=getSearchEngines&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetReferrersgetSearchEnginesmoduleReferrersactiongetSearchEnginesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Websites</name>
+						<category>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</category>
+						<subcategory>
+							<name>View goals by Referrers</name>
+							<order>99</order>
+							<id>View goals by Referrers</id>
+						</subcategory>
+						<module>Referrers</module>
+						<action>getWebsites</action>
+						<order>105</order>
+						<parameters>
+							<module>Referrers</module>
+							<action>getWebsites</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -4726,7 +4726,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Visits to Conversion</name>
+						<name>Abandoned Carts - Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4739,7 +4739,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>105</order>
+						<order>120</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -4754,7 +4754,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Days to Conversion</name>
+						<name>Abandoned Carts - Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4767,7 +4767,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>110</order>
+						<order>125</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -4779,6 +4779,34 @@
 						<widget_url>?module=Goals&amp;action=getDaysToConversion&amp;forceView=0&amp;viewDataTable=table&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetGoalsgetDaysToConversionmoduleGoalsactiongetDaysToConversionforceView0viewDataTabletabledocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>table</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</category>
+						<subcategory>
+							<name>View goals by Visitors</name>
+							<order>99</order>
+							<id>View goals by Visitors</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
 					<row>
@@ -4862,34 +4890,6 @@
 						</parameters>
 						<widget_url>?module=UserCountry&amp;action=getRegion&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetUserCountrygetRegionmoduleUserCountryactiongetRegionforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -5631,35 +5631,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Websites</name>
-						<category>
-							<name>View sales by Referrers</name>
-							<order>99</order>
-							<id>View sales by Referrers</id>
-						</category>
-						<subcategory>
-							<name>View sales by Referrers</name>
-							<order>99</order>
-							<id>View sales by Referrers</id>
-						</subcategory>
-						<module>Referrers</module>
-						<action>getWebsites</action>
-						<order>105</order>
-						<parameters>
-							<module>Referrers</module>
-							<action>getWebsites</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<abandonedCarts>0</abandonedCarts>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Search Engines</name>
 						<category>
 							<name>View sales by Referrers</name>
@@ -5685,6 +5656,35 @@
 						</parameters>
 						<widget_url>?module=Referrers&amp;action=getSearchEngines&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetReferrersgetSearchEnginesmoduleReferrersactiongetSearchEnginesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Websites</name>
+						<category>
+							<name>View sales by Referrers</name>
+							<order>99</order>
+							<id>View sales by Referrers</id>
+						</category>
+						<subcategory>
+							<name>View sales by Referrers</name>
+							<order>99</order>
+							<id>View sales by Referrers</id>
+						</subcategory>
+						<module>Referrers</module>
+						<action>getWebsites</action>
+						<order>105</order>
+						<parameters>
+							<module>Referrers</module>
+							<action>getWebsites</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<abandonedCarts>0</abandonedCarts>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -5718,7 +5718,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Visits to Conversion</name>
+						<name>Abandoned Carts - Visits to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -5731,7 +5731,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>105</order>
+						<order>120</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -5747,7 +5747,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Days to Conversion</name>
+						<name>Abandoned Carts - Days to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -5760,7 +5760,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>110</order>
+						<order>125</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -5773,6 +5773,35 @@
 						<widget_url>?module=Goals&amp;action=getDaysToConversion&amp;forceView=0&amp;viewDataTable=table&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetGoalsgetDaysToConversionmoduleGoalsactiongetDaysToConversionforceView0viewDataTabletableabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>table</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>View sales by Visitors</name>
+							<order>99</order>
+							<id>View sales by Visitors</id>
+						</category>
+						<subcategory>
+							<name>View sales by Visitors</name>
+							<order>99</order>
+							<id>View sales by Visitors</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<abandonedCarts>0</abandonedCarts>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
 					<row>
@@ -5859,35 +5888,6 @@
 						</parameters>
 						<widget_url>?module=UserCountry&amp;action=getRegion&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetUserCountrygetRegionmoduleUserCountryactiongetRegionforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<abandonedCarts>0</abandonedCarts>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -6026,35 +6026,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Websites</name>
-						<category>
-							<name>View sales by Referrers</name>
-							<order>99</order>
-							<id>View sales by Referrers</id>
-						</category>
-						<subcategory>
-							<name>View sales by Referrers</name>
-							<order>99</order>
-							<id>View sales by Referrers</id>
-						</subcategory>
-						<module>Referrers</module>
-						<action>getWebsites</action>
-						<order>105</order>
-						<parameters>
-							<module>Referrers</module>
-							<action>getWebsites</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<abandonedCarts>0</abandonedCarts>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Search Engines</name>
 						<category>
 							<name>View sales by Referrers</name>
@@ -6080,6 +6051,35 @@
 						</parameters>
 						<widget_url>?module=Referrers&amp;action=getSearchEngines&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetReferrersgetSearchEnginesmoduleReferrersactiongetSearchEnginesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Websites</name>
+						<category>
+							<name>View sales by Referrers</name>
+							<order>99</order>
+							<id>View sales by Referrers</id>
+						</category>
+						<subcategory>
+							<name>View sales by Referrers</name>
+							<order>99</order>
+							<id>View sales by Referrers</id>
+						</subcategory>
+						<module>Referrers</module>
+						<action>getWebsites</action>
+						<order>105</order>
+						<parameters>
+							<module>Referrers</module>
+							<action>getWebsites</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<abandonedCarts>0</abandonedCarts>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=Referrers&amp;action=getWebsites&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetReferrersgetWebsitesmoduleReferrersactiongetWebsitesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -6113,7 +6113,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Visits to Conversion</name>
+						<name>Abandoned Carts - Visits to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -6126,7 +6126,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>105</order>
+						<order>120</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -6142,7 +6142,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Days to Conversion</name>
+						<name>Abandoned Carts - Days to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -6155,7 +6155,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>110</order>
+						<order>125</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -6168,6 +6168,35 @@
 						<widget_url>?module=Goals&amp;action=getDaysToConversion&amp;forceView=0&amp;viewDataTable=table&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetGoalsgetDaysToConversionmoduleGoalsactiongetDaysToConversionforceView0viewDataTabletableabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>table</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>View sales by Visitors</name>
+							<order>99</order>
+							<id>View sales by Visitors</id>
+						</category>
+						<subcategory>
+							<name>View sales by Visitors</name>
+							<order>99</order>
+							<id>View sales by Visitors</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<abandonedCarts>0</abandonedCarts>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
 					<row>
@@ -6258,35 +6287,6 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<abandonedCarts>0</abandonedCarts>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>City</name>
 						<category>
 							<name>View sales by Visitors</name>
@@ -6349,10 +6349,151 @@
 		</widgets>
 	</row>
 	<row>
+		<uniqueId>ExampleUI_UiFramework.ExampleUI_GetTemperaturesDataTable</uniqueId>
+		<category>
+			<name>UI Framework</name>
+			<order>90</order>
+			<id>ExampleUI_UiFramework</id>
+		</category>
+		<subcategory>
+			<name>Data tables</name>
+			<order>99</order>
+			<id>ExampleUI_GetTemperaturesDataTable</id>
+		</subcategory>
+		<widgets>
+			<row>
+				<name>Data tables</name>
+				<module>ExampleUI</module>
+				<action>getTemperatures</action>
+				<order>210</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperatures</action>
+					<forceView>0</forceView>
+					<viewDataTable>table</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=0&amp;viewDataTable=table</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView0viewDataTabletable</uniqueId>
+				<viewDataTable>table</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Data tables</name>
+				<module>ExampleUI</module>
+				<action>getTemperatures</action>
+				<order>210</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperatures</action>
+					<forceView>0</forceView>
+					<viewDataTable>table</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=0&amp;viewDataTable=table</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView0viewDataTabletable</uniqueId>
+				<viewDataTable>table</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+		</widgets>
+	</row>
+	<row>
+		<uniqueId>ExampleUI_UiFramework.Bar graph</uniqueId>
+		<category>
+			<name>UI Framework</name>
+			<order>90</order>
+			<id>ExampleUI_UiFramework</id>
+		</category>
+		<subcategory>
+			<name>Bar graph</name>
+			<order>99</order>
+			<id>Bar graph</id>
+		</subcategory>
+		<widgets>
+			<row>
+				<name>Data tables</name>
+				<module>ExampleUI</module>
+				<action>getTemperatures</action>
+				<order>210</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperatures</action>
+					<forceView>1</forceView>
+					<viewDataTable>graphVerticalBar</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=graphVerticalBar</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTablegraphVerticalBar</uniqueId>
+				<viewDataTable>graphVerticalBar</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Data tables</name>
+				<module>ExampleUI</module>
+				<action>getTemperatures</action>
+				<order>210</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperatures</action>
+					<forceView>1</forceView>
+					<viewDataTable>graphVerticalBar</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=graphVerticalBar</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTablegraphVerticalBar</uniqueId>
+				<viewDataTable>graphVerticalBar</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+		</widgets>
+	</row>
+	<row>
+		<uniqueId>ExampleUI_UiFramework.Treemap</uniqueId>
+		<category>
+			<name>UI Framework</name>
+			<order>90</order>
+			<id>ExampleUI_UiFramework</id>
+		</category>
+		<subcategory>
+			<name>Treemap</name>
+			<order>99</order>
+			<id>Treemap</id>
+		</subcategory>
+		<widgets>
+			<row>
+				<name>Treemap example</name>
+				<module>ExampleUI</module>
+				<action>getTemperatures</action>
+				<order>210</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperatures</action>
+					<forceView>1</forceView>
+					<viewDataTable>infoviz-treemap</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=infoviz-treemap</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTableinfoviz-treemap</uniqueId>
+				<viewDataTable>infoviz-treemap</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Treemap example</name>
+				<module>ExampleUI</module>
+				<action>getTemperatures</action>
+				<order>210</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperatures</action>
+					<forceView>1</forceView>
+					<viewDataTable>infoviz-treemap</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=infoviz-treemap</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTableinfoviz-treemap</uniqueId>
+				<viewDataTable>infoviz-treemap</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+		</widgets>
+	</row>
+	<row>
 		<uniqueId>ExampleUI_UiFramework.Sparklines</uniqueId>
 		<category>
 			<name>UI Framework</name>
-			<order>99</order>
+			<order>90</order>
 			<id>ExampleUI_UiFramework</id>
 		</category>
 		<subcategory>
@@ -6365,7 +6506,23 @@
 				<name>Temperatures evolution over time</name>
 				<module>ExampleUI</module>
 				<action>getTemperaturesEvolution</action>
-				<order>101</order>
+				<order>211</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperaturesEvolution</action>
+					<forceView>1</forceView>
+					<viewDataTable>sparklines</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperaturesEvolution&amp;forceView=1&amp;viewDataTable=sparklines</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesEvolutionmoduleExampleUIactiongetTemperaturesEvolutionforceView1viewDataTablesparklines</uniqueId>
+				<viewDataTable>sparklines</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Temperatures evolution over time</name>
+				<module>ExampleUI</module>
+				<action>getTemperaturesEvolution</action>
+				<order>211</order>
 				<parameters>
 					<module>ExampleUI</module>
 					<action>getTemperaturesEvolution</action>
@@ -6383,7 +6540,7 @@
 		<uniqueId>ExampleUI_UiFramework.Evolution Graph</uniqueId>
 		<category>
 			<name>UI Framework</name>
-			<order>99</order>
+			<order>90</order>
 			<id>ExampleUI_UiFramework</id>
 		</category>
 		<subcategory>
@@ -6396,7 +6553,27 @@
 				<name>Evolution of server temperatures over the last few days</name>
 				<module>ExampleUI</module>
 				<action>getTemperaturesEvolution</action>
-				<order>101</order>
+				<order>211</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getTemperaturesEvolution</action>
+					<forceView>1</forceView>
+					<viewDataTable>graphEvolution</viewDataTable>
+					<columns>
+						<row>server1</row>
+						<row>server2</row>
+					</columns>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getTemperaturesEvolution&amp;forceView=1&amp;viewDataTable=graphEvolution&amp;columns%5B0%5D=server1&amp;columns%5B1%5D=server2</widget_url>
+				<uniqueId>widgetExampleUIgetTemperaturesEvolutionmoduleExampleUIactiongetTemperaturesEvolutionforceView1viewDataTablegraphEvolutioncolumnsArray</uniqueId>
+				<viewDataTable>graphEvolution</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Evolution of server temperatures over the last few days</name>
+				<module>ExampleUI</module>
+				<action>getTemperaturesEvolution</action>
+				<order>211</order>
 				<parameters>
 					<module>ExampleUI</module>
 					<action>getTemperaturesEvolution</action>
@@ -6415,103 +6592,10 @@
 		</widgets>
 	</row>
 	<row>
-		<uniqueId>ExampleUI_UiFramework.ExampleUI_GetTemperaturesDataTable</uniqueId>
-		<category>
-			<name>UI Framework</name>
-			<order>99</order>
-			<id>ExampleUI_UiFramework</id>
-		</category>
-		<subcategory>
-			<name>Data tables</name>
-			<order>99</order>
-			<id>ExampleUI_GetTemperaturesDataTable</id>
-		</subcategory>
-		<widgets>
-			<row>
-				<name>Data tables</name>
-				<module>ExampleUI</module>
-				<action>getTemperatures</action>
-				<order>101</order>
-				<parameters>
-					<module>ExampleUI</module>
-					<action>getTemperatures</action>
-					<forceView>0</forceView>
-					<viewDataTable>table</viewDataTable>
-				</parameters>
-				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=0&amp;viewDataTable=table</widget_url>
-				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView0viewDataTabletable</uniqueId>
-				<viewDataTable>table</viewDataTable>
-				<isReport>1</isReport>
-			</row>
-		</widgets>
-	</row>
-	<row>
-		<uniqueId>ExampleUI_UiFramework.Bar graph</uniqueId>
-		<category>
-			<name>UI Framework</name>
-			<order>99</order>
-			<id>ExampleUI_UiFramework</id>
-		</category>
-		<subcategory>
-			<name>Bar graph</name>
-			<order>99</order>
-			<id>Bar graph</id>
-		</subcategory>
-		<widgets>
-			<row>
-				<name>Data tables</name>
-				<module>ExampleUI</module>
-				<action>getTemperatures</action>
-				<order>101</order>
-				<parameters>
-					<module>ExampleUI</module>
-					<action>getTemperatures</action>
-					<forceView>1</forceView>
-					<viewDataTable>graphVerticalBar</viewDataTable>
-				</parameters>
-				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=graphVerticalBar</widget_url>
-				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTablegraphVerticalBar</uniqueId>
-				<viewDataTable>graphVerticalBar</viewDataTable>
-				<isReport>1</isReport>
-			</row>
-		</widgets>
-	</row>
-	<row>
-		<uniqueId>ExampleUI_UiFramework.Treemap</uniqueId>
-		<category>
-			<name>UI Framework</name>
-			<order>99</order>
-			<id>ExampleUI_UiFramework</id>
-		</category>
-		<subcategory>
-			<name>Treemap</name>
-			<order>99</order>
-			<id>Treemap</id>
-		</subcategory>
-		<widgets>
-			<row>
-				<name>Treemap example</name>
-				<module>ExampleUI</module>
-				<action>getTemperatures</action>
-				<order>101</order>
-				<parameters>
-					<module>ExampleUI</module>
-					<action>getTemperatures</action>
-					<forceView>1</forceView>
-					<viewDataTable>infoviz-treemap</viewDataTable>
-				</parameters>
-				<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=infoviz-treemap</widget_url>
-				<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTableinfoviz-treemap</uniqueId>
-				<viewDataTable>infoviz-treemap</viewDataTable>
-				<isReport>1</isReport>
-			</row>
-		</widgets>
-	</row>
-	<row>
 		<uniqueId>ExampleUI_UiFramework.Pie graph</uniqueId>
 		<category>
 			<name>UI Framework</name>
-			<order>99</order>
+			<order>90</order>
 			<id>ExampleUI_UiFramework</id>
 		</category>
 		<subcategory>
@@ -6524,7 +6608,23 @@
 				<name>Pie graph</name>
 				<module>ExampleUI</module>
 				<action>getPlanetRatios</action>
-				<order>101</order>
+				<order>212</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getPlanetRatios</action>
+					<forceView>0</forceView>
+					<viewDataTable>graphPie</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getPlanetRatios&amp;forceView=0&amp;viewDataTable=graphPie</widget_url>
+				<uniqueId>widgetExampleUIgetPlanetRatiosmoduleExampleUIactiongetPlanetRatiosforceView0viewDataTablegraphPie</uniqueId>
+				<viewDataTable>graphPie</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Pie graph</name>
+				<module>ExampleUI</module>
+				<action>getPlanetRatios</action>
+				<order>212</order>
 				<parameters>
 					<module>ExampleUI</module>
 					<action>getPlanetRatios</action>
@@ -6542,7 +6642,7 @@
 		<uniqueId>ExampleUI_UiFramework.Tag clouds</uniqueId>
 		<category>
 			<name>UI Framework</name>
-			<order>99</order>
+			<order>90</order>
 			<id>ExampleUI_UiFramework</id>
 		</category>
 		<subcategory>
@@ -6571,7 +6671,39 @@
 				<name>Advanced tag cloud: with logos and links</name>
 				<module>ExampleUI</module>
 				<action>getPlanetRatiosWithLogos</action>
-				<order>110</order>
+				<order>213</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getPlanetRatiosWithLogos</action>
+					<forceView>0</forceView>
+					<viewDataTable>cloud</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getPlanetRatiosWithLogos&amp;forceView=0&amp;viewDataTable=cloud</widget_url>
+				<uniqueId>widgetExampleUIgetPlanetRatiosWithLogosmoduleExampleUIactiongetPlanetRatiosWithLogosforceView0viewDataTablecloud</uniqueId>
+				<viewDataTable>cloud</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Simple tag cloud</name>
+				<module>ExampleUI</module>
+				<action>getPlanetRatios</action>
+				<order>5</order>
+				<parameters>
+					<module>ExampleUI</module>
+					<action>getPlanetRatios</action>
+					<forceView>1</forceView>
+					<viewDataTable>cloud</viewDataTable>
+				</parameters>
+				<widget_url>?module=ExampleUI&amp;action=getPlanetRatios&amp;forceView=1&amp;viewDataTable=cloud</widget_url>
+				<uniqueId>widgetExampleUIgetPlanetRatiosmoduleExampleUIactiongetPlanetRatiosforceView1viewDataTablecloud</uniqueId>
+				<viewDataTable>cloud</viewDataTable>
+				<isReport>1</isReport>
+			</row>
+			<row>
+				<name>Advanced tag cloud: with logos and links</name>
+				<module>ExampleUI</module>
+				<action>getPlanetRatiosWithLogos</action>
+				<order>213</order>
 				<parameters>
 					<module>ExampleUI</module>
 					<action>getPlanetRatiosWithLogos</action>

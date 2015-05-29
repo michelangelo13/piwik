@@ -145,7 +145,7 @@ class SegmentMetadata
      * @return $value
      * @throws \Exception
      */
-    private function checkSegmentMatchTypeIsValidForUser($value, $sqlSegment, $matchType, $name)
+    public function checkSegmentMatchTypeIsValidForUser($value, $sqlSegment, $matchType, $name)
     {
         $acceptedMatches = array(
             SegmentExpression::MATCH_EQUAL,

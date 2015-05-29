@@ -46,7 +46,7 @@
         function getAllPages()
         {
             if (!fetchAllPagesPromise) {
-                fetchAllPagesPromise = piwikApi.fetch({method: 'API.getPagesMetadata'}).then(function (response) {
+                fetchAllPagesPromise = piwikApi.fetch({method: 'API.getReportPagesMetadata'}).then(function (response) {
                     model.pages = response;
                     return response;
                 });

@@ -57,7 +57,7 @@ class WidgetMetadata
                     $subcategory = $category->getSubCategory($widget->getSubCategory());
                 }
 
-                $flat[] = $this->buildWidgetMetadata($widget, $category, $subcategory);
+                $flat[] = $this->buildWidgetMetadata($widget, $category, $subcategory, $addNestedWidgets = false);
             }
         }
 
@@ -66,7 +66,7 @@ class WidgetMetadata
         return $flat;
     }
 
-    private function buildWidgetMetadata(WidgetConfig $widget, $category, $subcategory)
+    private function buildWidgetMetadata(WidgetConfig $widget, $category, $subcategory, $addNestedWidgets = true)
     {
         $category = $category ? $this->buildCategoryMetadata($category) : null;
         $subcategory = $subcategory ? $this->buildSubCategoryMetadata($subcategory) : null;
@@ -93,16 +93,18 @@ class WidgetMetadata
             $item['layout'] = $widget->getLayout();
             $item['isContainer'] = true;
 
-            // todo we would extract that code into a method and reuse it with above
-            $children = array();
-            foreach ($widget->getWidgetConfigs() as $widgetConfig) {
-                $cat = $this->createCategoryForName($widgetConfig->getCategory());
-                $subcat = $this->createSubCategoryForName($widgetConfig->getCategory(), $widgetConfig->getSubCategory());
+            if ($addNestedWidgets) {
+                // todo we would extract that code into a method and reuse it with above
+                $children = array();
+                foreach ($widget->getWidgetConfigs() as $widgetConfig) {
+                    $cat = $this->createCategoryForName($widgetConfig->getCategory());
+                    $subcat = $this->createSubCategoryForName($widgetConfig->getCategory(), $widgetConfig->getSubCategory());
 
-                $child = $this->buildWidgetMetadata($widgetConfig, $cat, $subcat);
-                $children[] = $child;
+                    $child = $this->buildWidgetMetadata($widgetConfig, $cat, $subcat);
+                    $children[] = $child;
+                }
+                $item['widgets'] = $children;
             }
-            $item['widgets'] = $children;
         }
 
         return $item;

@@ -119,32 +119,6 @@ class API extends \Piwik\Plugin\API
     }
 
     /**
-     * Throw an exception if the User ID segment is used with an un-supported match type,
-     *
-     * @ignore
-     * @param $value
-     * @param $sqlSegment
-     * @param $matchType
-     * @param $name
-     * @return $value
-     * @throws \Exception
-     */
-    public function checkSegmentMatchTypeIsValidForUser($value, $sqlSegment, $matchType, $name)
-    {
-        $acceptedMatches = array(
-            SegmentExpression::MATCH_EQUAL,
-            SegmentExpression::MATCH_IS_NOT_NULL_NOR_EMPTY,
-            SegmentExpression::MATCH_IS_NULL_OR_EMPTY,
-            SegmentExpression::MATCH_NOT_EQUAL,
-        );
-        if (in_array($matchType, $acceptedMatches)) {
-            return $value;
-        }
-        $message = "Invalid Segment match type: try using 'userId' segment with one of the following match types: %s.";
-        throw new \Exception(sprintf($message, implode(", ", $acceptedMatches)));
-    }
-
-    /**
      * Returns the url to application logo (~280x110px)
      *
      * @param bool $pathOnly If true, returns path relative to doc root. Otherwise, returns a URL.

@@ -148,7 +148,7 @@ class Pages
 
         $config = $this->factory->createWidget();
         $config->setName($goalTranslated);
-        $config->setSubCategory($name);
+        $config->setSubCategory($idGoal);
         $config->forceViewDataTable(Evolution::ID);
         $config->setAction('getEvolutionGraph');
         $config->setParameters($params);
@@ -157,7 +157,7 @@ class Pages
         $widgets[] = $config;
 
         $config = $this->factory->createWidget();
-        $config->setSubCategory($name);
+        $config->setSubCategory($idGoal);
         $config->setName('');
         $config->forceViewDataTable(Sparklines::ID);
         $config->setParameters($params);
@@ -170,7 +170,7 @@ class Pages
         if ($conversions > 0) {
             $config = $this->factory->createWidget();
             $config->setAction('goalConversionsOverview');
-            $config->setSubCategory($name);
+            $config->setSubCategory($idGoal);
             $config->setName('Goals_ConversionsOverview');
             $config->setParameters($params);
             $config->setOrder(++$this->orderId);
@@ -180,7 +180,7 @@ class Pages
 
         $config = $this->factory->createContainerWidget('Goals' . $idGoal);
         $config->setName(Piwik::translate('Goals_GoalConversionsBy', array($name)));
-        $config->setSubCategory($name);
+        $config->setSubCategory($idGoal);
         $config->setParameters(array());
         $config->setOrder(++$this->orderId);
         $config->setIsNotWidgetizable();
@@ -268,7 +268,27 @@ class Pages
 
     private function getConversionForGoal($idGoal = '')
     {
-        $request = new Request("method=Goals.get&format=original&idGoal=$idGoal");
+        $period = Common::getRequestVar('period', '', 'string');
+        $date   = Common::getRequestVar('date', '', 'string');
+        $idSite = Common::getRequestVar('idSite', 0, 'int');
+
+        if (!$period || !$date || !$idSite) {
+            return false;
+        }
+
+        $request = new Request(array(
+            'method' => 'Goals.get',
+            'format' => 'original',
+            'idGoal' => $idGoal,
+            'period' => $period,
+            'date' => $date,
+            'idSite' => $idSite,
+            'segment' => false
+        ));
+
+        // we ignore the segment even if there is one set. We still want to show conversion overview if there are conversions
+        // in general but not for this segment
+
         $datatable = $request->process();
         $dataRow = $datatable->getFirstRow();
 

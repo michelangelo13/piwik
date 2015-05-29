@@ -8,6 +8,8 @@
  */
 namespace Piwik\Plugins\Ecommerce\Widgets;
 
+use Piwik\Common;
+use Piwik\Site;
 use Piwik\Widget\WidgetContainerConfig;
 
 class ProductsByDimension extends WidgetContainerConfig
@@ -16,4 +18,16 @@ class ProductsByDimension extends WidgetContainerConfig
     protected $id = 'Products';
     protected $category = 'Goals_Ecommerce';
     protected $subCategory = 'Goals_Products';
+
+    public function isEnabled()
+    {
+        $idSite = Common::getRequestVar('idSite', false, 'int');
+
+        if (empty($idSite)) {
+            return false;
+        }
+
+        $site = new Site($idSite);
+        return $site->isEcommerceEnabled();
+    }
 }

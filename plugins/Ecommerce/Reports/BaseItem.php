@@ -83,7 +83,24 @@ abstract class BaseItem extends Base
 
     private function getConversionForGoal($idGoal = '')
     {
-        $request = new Request("method=Goals.get&format=original&idGoal=$idGoal");
+        $period = Common::getRequestVar('period', '', 'string');
+        $date   = Common::getRequestVar('date', '', 'string');
+        $idSite = Common::getRequestVar('idSite', 0, 'int');
+
+        if (!$period || !$date || !$idSite) {
+            return false;
+        }
+
+        $request = new Request(array(
+            'method' => 'Goals.get',
+            'format' => 'original',
+            'idGoal' => $idGoal,
+            'period' => $period,
+            'date' => $date,
+            'idSite' => $idSite,
+            'segment' => false
+        ));
+
         $datatable = $request->process();
         $dataRow = $datatable->getFirstRow();
 

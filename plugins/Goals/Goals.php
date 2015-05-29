@@ -9,10 +9,12 @@
 namespace Piwik\Plugins\Goals;
 
 use Piwik\ArchiveProcessor;
+use Piwik\Common;
 use Piwik\Db;
 use Piwik\Piwik;
 use Piwik\Plugin\Report;
 use Piwik\Tracker\GoalManager;
+use Piwik\Widget\SubCategory;
 
 /**
  *
@@ -97,9 +99,32 @@ class Goals extends \Piwik\Plugin
             'Goals.getReportsWithGoalMetrics'        => 'getActualReportsWithGoalMetrics',
             'Translate.getClientSideTranslationKeys' => 'getClientSideTranslationKeys',
             'Metrics.getDefaultMetricTranslations'   => 'addMetricTranslations',
+            'SubCategory.addSubCategories' => 'addSubCategories'
         );
         return $hooks;
     }
+
+    public function addSubCategories(&$subcategories)
+    {
+        $idSite = Common::getRequestVar('idSite', 0, 'int');
+
+        if (!$idSite) {
+            return;
+        }
+
+        $goals = API::getInstance()->getGoals($idSite);
+
+        $order = 0;
+        foreach ($goals as $goal) {
+            $config = new SubCategory();
+            $config->setName($goal['name']);
+            $config->setCategory('Goals_Goals');
+            $config->setId($goal['idgoal']);
+            $config->setOrder($order++);
+            $subcategories[] = $config;
+        }
+    }
+
 
     public function addMetricTranslations(&$translations)
     {

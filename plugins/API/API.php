@@ -249,7 +249,7 @@ class API extends \Piwik\Plugin\API
         return $metadata->getWidgetMetadata($idSite);
     }
 
-    public function getPagesMetadata($idSite, $period, $date, $segment = false)
+    public function getReportPagesMetadata($idSite, $period, $date, $segment = false)
     {
         Piwik::checkUserHasViewAccess($idSite);
 

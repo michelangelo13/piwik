@@ -196,8 +196,8 @@ class UITestFixture extends SqlDump
         // collect widgets & sort them so widget order is not important
         $allWidgets = Request::processRequest('API.getWidgetMetadata', array(
             'idSite' => 1,
-            'period' => '2012-08-08',
-            'date' => 'year'
+            'period' => 'year',
+            'date' => '2012-08-08'
         ));
 
         usort($allWidgets, function ($lhs, $rhs) {

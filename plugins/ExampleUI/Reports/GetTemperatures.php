@@ -30,6 +30,7 @@ class GetTemperatures extends Base
 
         $this->name = Piwik::translate('ExampleUI_GetTemperaturesDataTable');
         $this->subCategory = 'ExampleUI_GetTemperaturesDataTable';
+        $this->order = 110;
     }
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)

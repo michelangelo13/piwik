@@ -7,6 +7,7 @@
  */
 namespace Piwik\Widget;
 
+use Piwik\Container\StaticContainer;
 use Piwik\Plugin\Manager as PluginManager;
 
 /**
@@ -75,7 +76,7 @@ class Category
     }
 
     /** @return \Piwik\Widget\Category[] */
-    public static function getAllCategories()
+    private static function getAllCategories()
     {
         $manager = PluginManager::getInstance();
         // todo move to Piwik\Widget\Category
@@ -83,9 +84,37 @@ class Category
 
         $instances = array();
         foreach ($categories as $category) {
-            $instances[] = new $category;
+            $cat = StaticContainer::get($category);
+            $instances[$cat->getName()] = $cat;
         }
 
         return $instances;
+    }
+
+    /**
+     * @return \Piwik\Widget\Category[]
+     */
+    public static function getAllCategoriesWithSubCategories()
+    {
+        $categories    = Category::getAllCategories();
+        $subcategories = SubCategory::getAllSubCategories();
+
+        // move subcategories into categories
+        foreach ($subcategories as $subcategory) {
+            $category = $subcategory->getCategory();
+
+            if (!$category) {
+                continue;
+            }
+
+            if (!isset($categories[$category])) {
+                $categories[$category] = new Category();
+                $categories[$category]->setName($category);
+            }
+
+            $categories[$category]->addSubCategory($subcategory);
+        }
+
+        return $categories;
     }
 }

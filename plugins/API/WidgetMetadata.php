@@ -169,28 +169,8 @@ class WidgetMetadata
      */
     private function moveWidgetsIntoCategories($widgetConfigs)
     {
-        $categories    = Category::getAllCategories();
-        $subcategories = SubCategory::getAllSubCategories();
-
         /** @var Category[] $all */
-        $all = array();
-        foreach ($categories as $category) {
-            $all[$category->getName()] = $category;
-        }
-
-        // move subcategories into categories
-        foreach ($subcategories as $subcategory) {
-            $category = $subcategory->getCategory();
-            if (!$category) {
-                return;
-            }
-            if (!isset($all[$category])) {
-                $all[$category] = new Category();
-                $all[$category]->setName($category);
-            }
-
-            $all[$category]->addSubCategory($subcategory);
-        }
+        $all = Category::getAllCategoriesWithSubCategories();
 
         // move reports into categories/subcategories and create missing ones if needed
         foreach ($widgetConfigs as $widgetConfig) {

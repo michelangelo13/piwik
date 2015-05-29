@@ -28,6 +28,7 @@ class GetPlanetRatios extends Base
 
         $this->name = 'Pie graph';
         $this->subCategory = $this->name;
+        $this->order = 112;
     }
 
     public function getDefaultTypeViewDataTable()

@@ -44,6 +44,7 @@ class Get extends \Piwik\Plugin\Report
             'nb_actions',
             'max_actions'
         );
+        $this->subCategory = 'General_Overview';
         // Used to process metrics, not displayed/used directly
 //								'sum_visit_length',
 //								'nb_visits_converted',
@@ -55,7 +56,6 @@ class Get extends \Piwik\Plugin\Report
         $widgetsList->addWidget(
             $factory->createWidget()
                 ->setName('General_EvolutionOverPeriod')
-                ->setSubCategory('General_Overview')
                 ->forceViewDataTable(Evolution::ID)
                 ->setAction('getEvolutionGraph')
                 ->setOrder(5)
@@ -65,7 +65,6 @@ class Get extends \Piwik\Plugin\Report
         $widgetsList->addWidget(
             $factory->createWidget()
                 ->setName('General_Report')
-                ->setSubCategory('General_Overview')
                 ->forceViewDataTable(Sparklines::ID)
                 ->setOrder(10)
         );

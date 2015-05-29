@@ -33,6 +33,7 @@ class GetTemperaturesEvolution extends Base
         parent::init();
 
         $this->name = Piwik::translate('ExampleUI_GetTemperaturesEvolution');
+        $this->order = 111;
     }
 
     public function configureWidgets(WidgetsList $widgetsList, ReportWidgetFactory $factory)

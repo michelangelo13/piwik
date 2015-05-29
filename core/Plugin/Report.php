@@ -192,25 +192,6 @@ class Report
     protected $defaultSortOrderDesc = true;
 
     /**
-     * @var array
-     * @ignore
-     */
-    public static $orderOfReports = array(
-        'General_MultiSitesSummary',
-        'VisitsSummary_VisitsSummary',
-        'Goals_Ecommerce',
-        'General_Actions',
-        'Events_Events',
-        'Actions_SubmenuSitesearch',
-        'Referrers_Referrers',
-        'Goals_Goals',
-        'General_Visitors',
-        'DevicesDetection_DevicesDetection',
-        'General_VisitorSettings',
-        'API'
-    );
-
-    /**
      * The constructur initializes the module, action and the default metrics. If you want to overwrite any of those
      * values or if you want to do any work during initializing overwrite the method {@link init()}.
      * @ignore
@@ -517,8 +498,8 @@ class Report
     protected function buildReportMetadata()
     {
         $report = array(
-            'category' => Piwik::translate($this->getCategory()),
-            'subcategory' => $this->getSubCategory() ? Piwik::translate($this->getSubCategory()) : null,
+            'category' => $this->getCategory(),
+            'subcategory' => $this->getSubCategory(),
             'name'     => $this->getName(),
             'module'   => $this->getModule(),
             'action'   => $this->getAction()
@@ -847,9 +828,70 @@ class Report
      */
     private static function sort($a, $b)
     {
-        return ($category = strcmp(array_search($a->category, self::$orderOfReports), array_search($b->category, self::$orderOfReports))) == 0
-            ? ($a->order < $b->order ? -1 : 1)
-            : $category;
+        return self::compareCategories($a->category, $a->subCategory, $a->order, $b->category, $b->subCategory, $b->order);
+    }
+    
+    public static function compareCategories($catA, $subcatA, $orderA, $catB, $subcatB, $orderB)
+    {
+        static $categories;
+
+        if (!isset($categories)) {
+            $categories = Category::getAllCategoriesWithSubCategories();
+        }
+
+        if (!empty($categories[$catA]) && !empty($categories[$catB])) {
+            $catA = $categories[$catA];
+            $catB = $categories[$catB];
+
+            if ($catA->getOrder() == $catB->getOrder()) {
+                // same category, compare subcategory
+                $subcatA = $catA->getSubCategory($subcatA);
+                $subcatB = $catB->getSubCategory($subcatB);
+
+                if ($subcatA && $subcatB) {
+                    if ($subcatA->getOrder() == $subcatB->getOrder()) {
+                        // same subcategory, compare order
+
+                        if ($orderA == $orderB) {
+                            return 0;
+                        }
+
+                        return $orderA < $orderB ? -1 : 1;
+                    }
+
+                    return $subcatA->getOrder() < $subcatB->getOrder() ? -1 : 1;
+
+                } elseif ($subcatA) {
+                    return -1;
+                } elseif ($subcatB) {
+                    return 1;
+                }
+
+                if ($orderA == $orderB) {
+                    return 0;
+                }
+
+                return $orderA < $orderB ? -1 : 1;
+            }
+
+            return $catA->getOrder() < $catB->getOrder() ? -1 : 1;
+
+        } elseif (!empty($categories[$catA])) {
+            return -1;
+        } elseif (!empty($categories[$catB])) {
+            return 1;
+        }
+
+        if ($catA === $catB) {
+            // both have same category, compare order
+            if ($orderA == $orderB) {
+                return 0;
+            }
+
+            return $orderA < $orderB ? -1 : 1;
+        }
+
+        return strnatcasecmp($catA, $catB);
     }
 
     private function getMetricTranslations($metricsToTranslate)

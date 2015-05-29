@@ -133,7 +133,7 @@ class SegmentMetadata
 
         return $segments;
     }
-    
+
     /**
      * Throw an exception if the User ID segment is used with an un-supported match type,
      *

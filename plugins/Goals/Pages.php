@@ -288,7 +288,6 @@ class Pages
         // we ignore the segment even if there is one set. We still want to show conversion overview if there are conversions
         // in general but not for this segment
 
-        $datatable = $request->process();
         $dataRow = $datatable->getFirstRow();
 
         if (!$dataRow) {

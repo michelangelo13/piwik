@@ -60,7 +60,7 @@ class Dashboard extends \Piwik\Plugin
             $config->setName($dashboard['name']);
             $config->setCategory('Dashboard_Dashboard');
             $config->setId($dashboard['id']);
-            $config->setOrder($order);
+            $config->setOrder($order++);
             $subcategories[] = $config;
         }
     }

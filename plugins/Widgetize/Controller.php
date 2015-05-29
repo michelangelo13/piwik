@@ -21,7 +21,6 @@ class Controller extends \Piwik\Plugin\Controller
     public function index()
     {
         $view = new View('@Widgetize/index');
-        $view->availableWidgets = json_encode(Request::processRequest('API.getWidgetMetadata'));
         $this->setGeneralVariablesView($view);
         return $view->render();
     }

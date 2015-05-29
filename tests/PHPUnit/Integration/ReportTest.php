@@ -155,7 +155,7 @@ class ReportTest extends IntegrationTestCase
     public function test_getCategory_shouldReturnTranslatedCategory()
     {
         Translate::loadAllTranslations();
-        $this->assertEquals('Goals', $this->advancedReport->getCategory());
+        $this->assertEquals('Goals_Goals', $this->advancedReport->getCategory());
         Translate::reset();
     }
 
@@ -263,7 +263,8 @@ class ReportTest extends IntegrationTestCase
                     'conversion_rate' => 'General_ColumnConversionRate',
                 ),
                 'actionToLoadSubTables' => 'invalidReport',
-                'order' => 20
+                'order' => 20,
+                'subcategory' => null
             )
         ), $reports);
     }
@@ -300,7 +301,8 @@ class ReportTest extends IntegrationTestCase
                 ),
                 'actionToLoadSubTables' => 'GetBasicReport',
                 'constantRowsCount' => true,
-                'order' => '20'
+                'order' => '20',
+                'subcategory' => 'Actions_SubmenuPageTitles'
             )
         ), $reports);
     }

@@ -13,6 +13,8 @@ namespace Piwik\Plugins\CoreHome;
  */
 class CoreHome extends \Piwik\Plugin
 {
+    const WIDGET_CONTAINER_LAYOUT_BY_DIMENSION = 'ByDimension';
+
     /**
      * @see Piwik\Plugin::getListHooksRegistered
      */

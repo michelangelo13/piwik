@@ -8,11 +8,12 @@
  */
 namespace Piwik\Plugins\Contents\Widgets;
 
+use Piwik\Plugins\CoreHome\CoreHome;
 use Piwik\Widget\WidgetContainerConfig;
 
 class ContentsByDimension extends WidgetContainerConfig
 {
-    protected $layout = 'ByDimension';
+    protected $layout = CoreHome::WIDGET_CONTAINER_LAYOUT_BY_DIMENSION;
     protected $id = 'Contents';
     protected $category = 'General_Actions';
     protected $subCategory = 'Contents_Contents';

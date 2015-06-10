@@ -6,7 +6,7 @@
             <ul class='listCircle'>
                 <li ng-repeat="widget in widgets"
                     class="reportDimension"
-                    ng-class="{activeDimension: $first && firstCategoryName===category}"
+                    ng-class="{activeDimension: (selectedWidget.uniqueId===widget.uniqueId)}"
                     ng-click="selectWidget(widget)">
                     <span class='dimension'>{{ widget.name }}</span>
                 </li>
@@ -15,14 +15,10 @@
     </div>
 
     <div style="float:left;max-width:900px;">
-
         <h2 ng-if="selectedWidget.name">{{selectedWidget.name}}</h2>
 
-        <div class="loadingPiwik" ng-show="loading">
-            <img src="plugins/Morpheus/images/loading-blue.gif" alt=""/>{{ 'General_LoadingData'|translate }}
-        </div>
-
-        <div ng-if="selectedWidget.html_url" class="dimensionReport" ng-include="selectedWidget.html_url"></div>
+        <div ng-if="selectedWidget.widget_url" class="dimensionReport"
+             piwik-widget-loader="selectedWidget.widget_url"></div>
     </div>
     <div class="clear"></div>
 

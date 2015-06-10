@@ -70,8 +70,8 @@
 
                         httpCanceler = $q.defer();
 
-                        $http.get(url, {timeout: httpCanceler.promise}).success(function(data) {
-                            if (thisChangeId !== changeCounter || !data) {
+                        $http.get(url, {timeout: httpCanceler.promise}).success(function(response) {
+                            if (thisChangeId !== changeCounter || !response) {
                                 // another widget was requested meanwhile, ignore this response
                                 return;
                             }
@@ -84,7 +84,7 @@
                             scope.loading = false;
                             scope.loadingFailed = false;
 
-                            currentElement = contentNode.html(data).children();
+                            currentElement = contentNode.html(response).children();
                             $compile(currentElement)(newScope);
 
                         }).error(function () {
@@ -96,6 +96,7 @@
                             httpCanceler = null;
 
                             cleanupLastWidgetContent();
+
                             scope.loading = false;
                             scope.loadingFailed = true;
                         });

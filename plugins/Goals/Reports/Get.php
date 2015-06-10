@@ -47,30 +47,29 @@ class Get extends Base
 
         $page = new Pages($factory, $reports);
 
-        $allPages   = array();
-        $allPages[] = $page->createGoalsOverviewPage($goals);
+        $order = 1;
+
+        $widgets = $page->createGoalsOverviewPage($goals);
+        $widgetsList->addWidgets($widgets);
+        $this->makePageWidgetizable($pageName = 'General_Overview', $widgets, $order++, $widgetsList, $factory);
 
         if ($ecommerceEnabled) {
-            $allPages[] = $page->createEcommerceOverviewPage();
+            $widgets = $page->createEcommerceOverviewPage();
+            $widgetsList->addWidgets($widgets);
+            $this->makePageWidgetizable($pageName = 'General_Overview', $widgets, $order++, $widgetsList, $factory);
+
+            // we do not want to create a widgetizable widget for this page
+            $widgetsList->addWidgets($page->createEcommerceSalesPage());
         }
 
         foreach ($goals as $goal) {
-            $allPages[] = $page->createGoalDetailPage($goal);
-        }
-
-        $order = 2;
-        foreach ($allPages as $widgets) {
+            $widgets = $page->createGoalDetailPage($goal);
             $widgetsList->addWidgets($widgets);
-            $this->makePageWidgetizable($widgets, $order++, $widgetsList, $factory);
-        }
-
-        // we do not want to create a widgetizable widget for this page
-        if ($ecommerceEnabled) {
-            $widgetsList->addWidgets($page->createEcommerceSalesPage());
+            $this->makePageWidgetizable($goal['name'], $widgets, $order++, $widgetsList, $factory);
         }
     }
 
-    private function makePageWidgetizable($widgets, $order, WidgetsList $widgetsList, ReportWidgetFactory $factory)
+    private function makePageWidgetizable($pageName, $widgets, $order, WidgetsList $widgetsList, ReportWidgetFactory $factory)
     {
         /** @var \Piwik\Widget\WidgetConfig[] $widgets */
         $firstWidget = reset($widgets);
@@ -78,15 +77,16 @@ class Get extends Base
         $id = $firstWidget->getCategory() . $firstWidget->getSubCategory();
 
         $config = $factory->createContainerWidget($id);
-        $config->setName($firstWidget->getSubCategory());
+        $config->setName($pageName);
         $config->setCategory($firstWidget->getCategory());
         $config->setSubCategory('');
         $config->setIsWidgetizable();
         $config->setOrder($order);
-        $widgetsList->addContainer($config);
         foreach ($widgets as $widget) {
             $config->addWidget($widget);
         }
+
+        $widgetsList->addContainer($config);
     }
 
     public function configureView(ViewDataTable $view)

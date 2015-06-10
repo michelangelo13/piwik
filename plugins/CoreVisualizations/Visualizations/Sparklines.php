@@ -90,7 +90,7 @@ class Sparklines extends ViewDataTable
 
                 $sparkline['metrics'][] = array(
                     'value' => $firstRow->getColumn($col),
-                    'description' => $translations[$col]
+                    'description' => isset($translations[$col]) ? $translations[$col] : $col
                 );
             }
 

@@ -771,6 +771,13 @@ class Report
             $mapApiToReport = array();
             foreach ($reports as $report) {
                 $key = $report->getModule() . '.' . ucfirst($report->getAction());
+
+                if (isset($mapApiToReport[$key]) && $report->getParameters()) {
+                    // sometimes there are multiple reports with same module/action but different parameters.
+                    // we might pick the "wrong" one. At some point we should compare all parameters and if there is
+                    // a report which parameters mach $_REQUEST then we should prefer that report
+                    continue;
+                }
                 $mapApiToReport[$key] = get_class($report);
             }
 

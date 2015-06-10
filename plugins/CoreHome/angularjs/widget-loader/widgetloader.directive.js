@@ -44,7 +44,7 @@
 
                     var abortHttpRequestIfNeeded = function () {
                         if (httpCanceler) {
-                            httpCanceler.reject();
+                            httpCanceler.resolve();
                             httpCanceler = null;
                         }
                     }
@@ -71,7 +71,7 @@
                         httpCanceler = $q.defer();
 
                         $http.get(url, {timeout: httpCanceler.promise}).success(function(data) {
-                            if (thisChangeId !== changeCounter) {
+                            if (thisChangeId !== changeCounter || !data) {
                                 // another widget was requested meanwhile, ignore this response
                                 return;
                             }
@@ -107,7 +107,7 @@
                         }
                     });
 
-                    scope.$on('$destroy', function() {
+                    element.on('$destroy', function() {
                         abortHttpRequestIfNeeded();
                     });
                 };

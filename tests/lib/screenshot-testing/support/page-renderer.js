@@ -421,7 +421,18 @@ PageRenderer.prototype._executeEvents = function (events, callback, i) {
 
 PageRenderer.prototype._getAjaxRequestCount = function () {
     return this.webpage.evaluate(function () {
-        return window.globalAjaxQueue ? window.globalAjaxQueue.active : 0;
+        var active = window.globalAjaxQueue ? window.globalAjaxQueue.active : 0;
+
+        if ('undefined' !== (typeof angular)
+            && angular && document && angular.element(document)
+            && angular.element(document).injector()) {
+            var $http = angular.element(document).injector().get('$http');
+            if ($http && $http.pendingRequests) {
+                active += $http.pendingRequests.length;
+            }
+        }
+
+        return active;
     });
 };
 

@@ -15,21 +15,7 @@
         }
 
         return {
-            'request': function(config) {
-                globalAjaxQueue.active++;
-                return config;
-            },
-            'response': function(response) {
-                globalAjaxQueue.active--;
-                return response;
-            },
-            'requestError': function(rejection) {
-                globalAjaxQueue.active--;
-
-                return $q.reject(rejection);
-            },
             'responseError': function(rejection) {
-                globalAjaxQueue.active--;
 
                 if (rejection &&
                     isClientError(rejection) &&

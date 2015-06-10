@@ -2766,7 +2766,7 @@
 				<name>Goal Goal 1 - Thank you</name>
 				<module>Goals</module>
 				<action>getEvolutionGraph</action>
-				<order>9</order>
+				<order>10</order>
 				<parameters>
 					<module>Goals</module>
 					<action>getEvolutionGraph</action>
@@ -2783,7 +2783,7 @@
 				<name />
 				<module>Goals</module>
 				<action>get</action>
-				<order>10</order>
+				<order>11</order>
 				<parameters>
 					<module>Goals</module>
 					<action>get</action>
@@ -2800,7 +2800,7 @@
 				<name>Goal Goal 1 - Thank you conversions by type of visit</name>
 				<module>CoreHome</module>
 				<action>renderReportWidgetContainer</action>
-				<order>11</order>
+				<order>12</order>
 				<parameters>
 					<module>CoreHome</module>
 					<action>renderReportWidgetContainer</action>
@@ -2952,7 +2952,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Visits to Conversion</name>
+						<name>Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -2965,7 +2965,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>120</order>
+						<order>105</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -2980,7 +2980,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Days to Conversion</name>
+						<name>Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -2993,7 +2993,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>125</order>
+						<order>110</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -3196,7 +3196,7 @@
 				<name>Goal Goal 2 - Hello</name>
 				<module>Goals</module>
 				<action>getEvolutionGraph</action>
-				<order>12</order>
+				<order>13</order>
 				<parameters>
 					<module>Goals</module>
 					<action>getEvolutionGraph</action>
@@ -3213,7 +3213,7 @@
 				<name />
 				<module>Goals</module>
 				<action>get</action>
-				<order>13</order>
+				<order>14</order>
 				<parameters>
 					<module>Goals</module>
 					<action>get</action>
@@ -3230,7 +3230,7 @@
 				<name>Goal Goal 2 - Hello conversions by type of visit</name>
 				<module>CoreHome</module>
 				<action>renderReportWidgetContainer</action>
-				<order>14</order>
+				<order>15</order>
 				<parameters>
 					<module>CoreHome</module>
 					<action>renderReportWidgetContainer</action>
@@ -3382,7 +3382,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Visits to Conversion</name>
+						<name>Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3395,7 +3395,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>120</order>
+						<order>105</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -3410,7 +3410,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Days to Conversion</name>
+						<name>Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3423,7 +3423,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>125</order>
+						<order>110</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -3626,7 +3626,7 @@
 				<name>Goal triggered js</name>
 				<module>Goals</module>
 				<action>getEvolutionGraph</action>
-				<order>15</order>
+				<order>16</order>
 				<parameters>
 					<module>Goals</module>
 					<action>getEvolutionGraph</action>
@@ -3643,7 +3643,7 @@
 				<name />
 				<module>Goals</module>
 				<action>get</action>
-				<order>16</order>
+				<order>17</order>
 				<parameters>
 					<module>Goals</module>
 					<action>get</action>
@@ -3660,7 +3660,7 @@
 				<name>Conversions Overview</name>
 				<module>Goals</module>
 				<action>goalConversionsOverview</action>
-				<order>17</order>
+				<order>18</order>
 				<parameters>
 					<module>Goals</module>
 					<action>goalConversionsOverview</action>
@@ -3677,7 +3677,7 @@
 				<name>Goal triggered js conversions by type of visit</name>
 				<module>CoreHome</module>
 				<action>renderReportWidgetContainer</action>
-				<order>18</order>
+				<order>19</order>
 				<parameters>
 					<module>CoreHome</module>
 					<action>renderReportWidgetContainer</action>
@@ -3829,7 +3829,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Visits to Conversion</name>
+						<name>Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3842,7 +3842,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>120</order>
+						<order>105</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -3857,7 +3857,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Days to Conversion</name>
+						<name>Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -3870,7 +3870,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>125</order>
+						<order>110</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -4258,7 +4258,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Visits to Conversion</name>
+						<name>Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4271,7 +4271,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>120</order>
+						<order>105</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -4286,7 +4286,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Days to Conversion</name>
+						<name>Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4299,7 +4299,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>125</order>
+						<order>110</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -4726,7 +4726,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Visits to Conversion</name>
+						<name>Visits to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4739,7 +4739,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>120</order>
+						<order>105</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -4754,7 +4754,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Days to Conversion</name>
+						<name>Days to Conversion</name>
 						<category>
 							<name>View goals by Visit</name>
 							<order>99</order>
@@ -4767,7 +4767,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>125</order>
+						<order>110</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -5560,7 +5560,7 @@
 				<name />
 				<module>CoreHome</module>
 				<action>renderReportWidgetContainer</action>
-				<order>19</order>
+				<order>9</order>
 				<parameters>
 					<module>CoreHome</module>
 					<action>renderReportWidgetContainer</action>
@@ -5718,7 +5718,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Visits to Conversion</name>
+						<name>Visits to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -5731,7 +5731,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>120</order>
+						<order>105</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -5747,7 +5747,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Days to Conversion</name>
+						<name>Days to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -5760,7 +5760,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>125</order>
+						<order>110</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>
@@ -5955,7 +5955,7 @@
 				<name />
 				<module>CoreHome</module>
 				<action>renderReportWidgetContainer</action>
-				<order>19</order>
+				<order>9</order>
 				<parameters>
 					<module>CoreHome</module>
 					<action>renderReportWidgetContainer</action>
@@ -6113,7 +6113,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Visits to Conversion</name>
+						<name>Visits to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -6126,7 +6126,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
-						<order>120</order>
+						<order>105</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getVisitsUntilConversion</action>
@@ -6142,7 +6142,7 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Abandoned Carts - Days to Conversion</name>
+						<name>Days to Conversion</name>
 						<category>
 							<name>View sales by Visit</name>
 							<order>99</order>
@@ -6155,7 +6155,7 @@
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
-						<order>125</order>
+						<order>110</order>
 						<parameters>
 							<module>Goals</module>
 							<action>getDaysToConversion</action>

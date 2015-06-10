@@ -1586,28 +1586,7 @@
 		<isReport>1</isReport>
 	</row>
 	<row>
-		<name>2</name>
-		<category>
-			<name>Goals</name>
-			<order>20</order>
-			<id>Goals_Goals</id>
-		</category>
-		<subcategory />
-		<module>CoreHome</module>
-		<action>renderReportWidgetContainer</action>
-		<order>5</order>
-		<parameters>
-			<module>CoreHome</module>
-			<action>renderReportWidgetContainer</action>
-			<containerId>Goals_Goals2</containerId>
-		</parameters>
-		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals2</widget_url>
-		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals2</uniqueId>
-		<layout />
-		<isContainer>1</isContainer>
-	</row>
-	<row>
-		<name>1</name>
+		<name>Goal 2 - Hello</name>
 		<category>
 			<name>Goals</name>
 			<order>20</order>
@@ -1620,15 +1599,15 @@
 		<parameters>
 			<module>CoreHome</module>
 			<action>renderReportWidgetContainer</action>
-			<containerId>Goals_Goals1</containerId>
+			<containerId>Goals_Goals2</containerId>
 		</parameters>
-		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals1</widget_url>
-		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals1</uniqueId>
+		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals2</widget_url>
+		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals2</uniqueId>
 		<layout />
 		<isContainer>1</isContainer>
 	</row>
 	<row>
-		<name>3</name>
+		<name>Goal 1 - Thank you</name>
 		<category>
 			<name>Goals</name>
 			<order>20</order>
@@ -1637,7 +1616,28 @@
 		<subcategory />
 		<module>CoreHome</module>
 		<action>renderReportWidgetContainer</action>
-		<order>6</order>
+		<order>3</order>
+		<parameters>
+			<module>CoreHome</module>
+			<action>renderReportWidgetContainer</action>
+			<containerId>Goals_Goals1</containerId>
+		</parameters>
+		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals1</widget_url>
+		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals1</uniqueId>
+		<layout />
+		<isContainer>1</isContainer>
+	</row>
+	<row>
+		<name>triggered js</name>
+		<category>
+			<name>Goals</name>
+			<order>20</order>
+			<id>Goals_Goals</id>
+		</category>
+		<subcategory />
+		<module>CoreHome</module>
+		<action>renderReportWidgetContainer</action>
+		<order>5</order>
 		<parameters>
 			<module>CoreHome</module>
 			<action>renderReportWidgetContainer</action>
@@ -1658,7 +1658,7 @@
 		<subcategory />
 		<module>CoreHome</module>
 		<action>renderReportWidgetContainer</action>
-		<order>2</order>
+		<order>1</order>
 		<parameters>
 			<module>CoreHome</module>
 			<action>renderReportWidgetContainer</action>
@@ -1782,7 +1782,7 @@
 		<subcategory />
 		<module>CoreHome</module>
 		<action>renderReportWidgetContainer</action>
-		<order>3</order>
+		<order>2</order>
 		<parameters>
 			<module>CoreHome</module>
 			<action>renderReportWidgetContainer</action>

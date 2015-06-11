@@ -108,7 +108,7 @@ TestingEnvironment.prototype.executeConsoleCommand = function (command, args, ca
             firstLine = false;
         }
 
-        fs.write("/dev/stdout", data.replace(/\n/g, "\n    "), "w");
+        console.warn(data.replace(/\n/g, "\n    "));
     });
 
     child.stderr.on("data", function (data) {
@@ -117,7 +117,7 @@ TestingEnvironment.prototype.executeConsoleCommand = function (command, args, ca
             firstLine = false;
         }
 
-        fs.write("/dev/stderr", data, "w");
+        console.warn(data);
     });
 
     child.on("exit", callback);

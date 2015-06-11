@@ -13,7 +13,7 @@ function widgetsHelper() {
  *
  * @return {object} object containing available widgets
  */
-widgetsHelper.getAvailableWidgets = function () {
+widgetsHelper.getAvailableWidgets = function (callback) {
 
     function mergeCategoriesAndSubCategories(availableWidgets)
     {
@@ -71,9 +71,17 @@ widgetsHelper.getAvailableWidgets = function () {
         ajaxRequest.setCallback(
             function (data) {
                 widgetsHelper.availableWidgets = mergeCategoriesAndSubCategories(data);
+
+                if (callback) {
+                    callback(widgetsHelper.availableWidgets);
+                }
             }
         );
-        ajaxRequest.send(true);
+        ajaxRequest.send();
+    }
+
+    if (callback) {
+        callback(widgetsHelper.availableWidgets);
     }
 
     return widgetsHelper.availableWidgets;
@@ -365,7 +373,7 @@ widgetsHelper.loadWidgetAjax = function (widgetUniqueId, widgetParameters, onWid
              */
             function showPreview(widgetUniqueId, widgetPreview) {
                 // do not reload id widget already displayed
-                if ($('#' + widgetUniqueId, widgetPreview).length) return;
+                if ($('[id="' + widgetUniqueId + '"]', widgetPreview).length) return;
 
                 var settings = widgetPreview.settings;
 
@@ -447,19 +455,21 @@ widgetsHelper.loadWidgetAjax = function (widgetUniqueId, widgetParameters, onWid
                     this.onPreviewLoaded = this.settings.onPreviewLoaded;
                 }
 
-                availableWidgets = widgetsHelper.getAvailableWidgets();
-
-                var categoryList = createWidgetCategoryList(this, availableWidgets);
-
                 var self = this;
-                $('li', categoryList).on('mouseover', function () {
-                    var category = $(this).text();
-                    var widgets = availableWidgets[category];
-                    $('li', categoryList).removeClass(self.settings.choosenClass);
-                    $(this).addClass(self.settings.choosenClass);
-                    showWidgetList(widgets, self);
-                    createPreviewElement(self); // empty preview
+                widgetsHelper.getAvailableWidgets(function (availableWidgets) {
+
+                    var categoryList = createWidgetCategoryList(self, availableWidgets);
+
+                    $('li', categoryList).on('mouseover', function () {
+                        var category = $(this).text();
+                        var widgets = availableWidgets[category];
+                        $('li', categoryList).removeClass(self.settings.choosenClass);
+                        $(this).addClass(self.settings.choosenClass);
+                        showWidgetList(widgets, self);
+                        createPreviewElement(self); // empty preview
+                    });
                 });
+
             };
         }
     });

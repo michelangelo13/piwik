@@ -200,10 +200,8 @@
         }
     };
 
-    function removeNonExistingWidgets(layout)
+    function removeNonExistingWidgets(availableWidgets, layout)
     {
-        var availableWidgets = widgetsHelper.getAvailableWidgets();
-
         var existingModuleAction = {};
         $.each(availableWidgets, function (category, widgets) {
             $.each(widgets, function (index, widget) {
@@ -243,30 +241,33 @@
     function generateLayout(layout) {
 
         dashboardLayout = parseLayout(layout);
-        dashboardLayout = removeNonExistingWidgets(dashboardLayout);
 
-        piwikHelper.hideAjaxLoading();
-        adjustDashboardColumns(dashboardLayout.config.layout);
+        widgetsHelper.getAvailableWidgets(function (availableWidgets) {
+            dashboardLayout = removeNonExistingWidgets(availableWidgets, dashboardLayout);
 
-        var dashboardContainsWidgets = false;
-        for (var column = 0; column < dashboardLayout.columns.length; column++) {
-            for (var i in dashboardLayout.columns[column]) {
-                if (typeof dashboardLayout.columns[column][i] != 'object') {
-                    // Fix IE8 bug: the "i in" loop contains i="indexOf", which would yield type function.
-                    // If we would continue with i="indexOf", an invalid widget would be created.
-                    continue;
+            piwikHelper.hideAjaxLoading();
+            adjustDashboardColumns(dashboardLayout.config.layout);
+
+            var dashboardContainsWidgets = false;
+            for (var column = 0; column < dashboardLayout.columns.length; column++) {
+                for (var i in dashboardLayout.columns[column]) {
+                    if (typeof dashboardLayout.columns[column][i] != 'object') {
+                        // Fix IE8 bug: the "i in" loop contains i="indexOf", which would yield type function.
+                        // If we would continue with i="indexOf", an invalid widget would be created.
+                        continue;
+                    }
+                    var widget = dashboardLayout.columns[column][i];
+                    dashboardContainsWidgets = true;
+                    addWidgetTemplate(widget.uniqueId, column + 1, widget.parameters, false, widget.isHidden)
                 }
-                var widget = dashboardLayout.columns[column][i];
-                dashboardContainsWidgets = true;
-                addWidgetTemplate(widget.uniqueId, column + 1, widget.parameters, false, widget.isHidden)
             }
-        }
 
-        if (!dashboardContainsWidgets) {
-            $(dashboardElement).trigger('dashboardempty');
-        }
+            if (!dashboardContainsWidgets) {
+                $(dashboardElement).trigger('dashboardempty');
+            }
 
-        makeWidgetsSortable();
+            makeWidgetsSortable();
+        });
     }
 
     /**

@@ -92,8 +92,8 @@ class Controller extends \Piwik\Plugin\Controller
 
                     $_GET = $oldGet + $params;
 
-                    $content = FrontController::getInstance()->dispatch($config->getModule(), $config->getAction());
-                    $widgets[] = array('content' => $content, 'name' => $config->getName());
+                    //$content = FrontController::getInstance()->dispatch($config->getModule(), $config->getAction());
+                    $widgets[] = array('content' => '', 'name' => $config->getName());
 
                     $_GET = $oldGet;
                 }

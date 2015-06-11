@@ -1586,94 +1586,10 @@
 		<isReport>1</isReport>
 	</row>
 	<row>
-		<name>Goal 2 - Hello</name>
-		<category>
-			<name>Goals</name>
-			<order>20</order>
-			<id>Goals_Goals</id>
-		</category>
-		<subcategory />
-		<module>CoreHome</module>
-		<action>renderReportWidgetContainer</action>
-		<order>4</order>
-		<parameters>
-			<module>CoreHome</module>
-			<action>renderReportWidgetContainer</action>
-			<containerId>Goals_Goals2</containerId>
-		</parameters>
-		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals2</widget_url>
-		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals2</uniqueId>
-		<layout />
-		<isContainer>1</isContainer>
-	</row>
-	<row>
-		<name>Goal 1 - Thank you</name>
-		<category>
-			<name>Goals</name>
-			<order>20</order>
-			<id>Goals_Goals</id>
-		</category>
-		<subcategory />
-		<module>CoreHome</module>
-		<action>renderReportWidgetContainer</action>
-		<order>3</order>
-		<parameters>
-			<module>CoreHome</module>
-			<action>renderReportWidgetContainer</action>
-			<containerId>Goals_Goals1</containerId>
-		</parameters>
-		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals1</widget_url>
-		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals1</uniqueId>
-		<layout />
-		<isContainer>1</isContainer>
-	</row>
-	<row>
-		<name>triggered js</name>
-		<category>
-			<name>Goals</name>
-			<order>20</order>
-			<id>Goals_Goals</id>
-		</category>
-		<subcategory />
-		<module>CoreHome</module>
-		<action>renderReportWidgetContainer</action>
-		<order>5</order>
-		<parameters>
-			<module>CoreHome</module>
-			<action>renderReportWidgetContainer</action>
-			<containerId>Goals_Goals3</containerId>
-		</parameters>
-		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals3</widget_url>
-		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals3</uniqueId>
-		<layout />
-		<isContainer>1</isContainer>
-	</row>
-	<row>
-		<name>Overview</name>
-		<category>
-			<name>Goals</name>
-			<order>20</order>
-			<id>Goals_Goals</id>
-		</category>
-		<subcategory />
-		<module>CoreHome</module>
-		<action>renderReportWidgetContainer</action>
-		<order>1</order>
-		<parameters>
-			<module>CoreHome</module>
-			<action>renderReportWidgetContainer</action>
-			<containerId>Goals_GoalsGeneral_Overview</containerId>
-		</parameters>
-		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_GoalsGeneral_Overview</widget_url>
-		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_GoalsGeneral_Overview</uniqueId>
-		<layout />
-		<isContainer>1</isContainer>
-	</row>
-	<row>
 		<name>Ecommerce Log</name>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory>
@@ -1692,37 +1608,10 @@
 		<uniqueId>widgetEcommercegetEcommerceLog</uniqueId>
 	</row>
 	<row>
-		<name>Product Name</name>
-		<category>
-			<name>Ecommerce</name>
-			<order>25</order>
-			<id>Goals_Ecommerce</id>
-		</category>
-		<subcategory>
-			<name>Products</name>
-			<order>10</order>
-			<id>Goals_Products</id>
-		</subcategory>
-		<module>Goals</module>
-		<action>getItemsName</action>
-		<order>131</order>
-		<parameters>
-			<module>Goals</module>
-			<action>getItemsName</action>
-			<forceView>0</forceView>
-			<viewDataTable>table</viewDataTable>
-			<abandonedCarts>1</abandonedCarts>
-		</parameters>
-		<widget_url>?module=Goals&amp;action=getItemsName&amp;forceView=0&amp;viewDataTable=table&amp;abandonedCarts=1</widget_url>
-		<uniqueId>widgetGoalsgetItemsNamemoduleGoalsactiongetItemsNameforceView0viewDataTabletableabandonedCarts1</uniqueId>
-		<viewDataTable>table</viewDataTable>
-		<isReport>1</isReport>
-	</row>
-	<row>
 		<name>Product SKU</name>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory>
@@ -1746,10 +1635,37 @@
 		<isReport>1</isReport>
 	</row>
 	<row>
+		<name>Product Name</name>
+		<category>
+			<name>Ecommerce</name>
+			<order>20</order>
+			<id>Goals_Ecommerce</id>
+		</category>
+		<subcategory>
+			<name>Products</name>
+			<order>10</order>
+			<id>Goals_Products</id>
+		</subcategory>
+		<module>Goals</module>
+		<action>getItemsName</action>
+		<order>131</order>
+		<parameters>
+			<module>Goals</module>
+			<action>getItemsName</action>
+			<forceView>0</forceView>
+			<viewDataTable>table</viewDataTable>
+			<abandonedCarts>1</abandonedCarts>
+		</parameters>
+		<widget_url>?module=Goals&amp;action=getItemsName&amp;forceView=0&amp;viewDataTable=table&amp;abandonedCarts=1</widget_url>
+		<uniqueId>widgetGoalsgetItemsNamemoduleGoalsactiongetItemsNameforceView0viewDataTabletableabandonedCarts1</uniqueId>
+		<viewDataTable>table</viewDataTable>
+		<isReport>1</isReport>
+	</row>
+	<row>
 		<name>Product Category</name>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory>
@@ -1776,7 +1692,7 @@
 		<name>Overview</name>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory />
@@ -1790,6 +1706,90 @@
 		</parameters>
 		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_EcommerceGeneral_Overview</widget_url>
 		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_EcommerceGeneral_Overview</uniqueId>
+		<layout />
+		<isContainer>1</isContainer>
+	</row>
+	<row>
+		<name>Overview</name>
+		<category>
+			<name>Goals</name>
+			<order>25</order>
+			<id>Goals_Goals</id>
+		</category>
+		<subcategory />
+		<module>CoreHome</module>
+		<action>renderReportWidgetContainer</action>
+		<order>1</order>
+		<parameters>
+			<module>CoreHome</module>
+			<action>renderReportWidgetContainer</action>
+			<containerId>Goals_GoalsGeneral_Overview</containerId>
+		</parameters>
+		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_GoalsGeneral_Overview</widget_url>
+		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_GoalsGeneral_Overview</uniqueId>
+		<layout />
+		<isContainer>1</isContainer>
+	</row>
+	<row>
+		<name>triggered js</name>
+		<category>
+			<name>Goals</name>
+			<order>25</order>
+			<id>Goals_Goals</id>
+		</category>
+		<subcategory />
+		<module>CoreHome</module>
+		<action>renderReportWidgetContainer</action>
+		<order>5</order>
+		<parameters>
+			<module>CoreHome</module>
+			<action>renderReportWidgetContainer</action>
+			<containerId>Goals_Goals3</containerId>
+		</parameters>
+		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals3</widget_url>
+		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals3</uniqueId>
+		<layout />
+		<isContainer>1</isContainer>
+	</row>
+	<row>
+		<name>Goal 1 - Thank you</name>
+		<category>
+			<name>Goals</name>
+			<order>25</order>
+			<id>Goals_Goals</id>
+		</category>
+		<subcategory />
+		<module>CoreHome</module>
+		<action>renderReportWidgetContainer</action>
+		<order>3</order>
+		<parameters>
+			<module>CoreHome</module>
+			<action>renderReportWidgetContainer</action>
+			<containerId>Goals_Goals1</containerId>
+		</parameters>
+		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals1</widget_url>
+		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals1</uniqueId>
+		<layout />
+		<isContainer>1</isContainer>
+	</row>
+	<row>
+		<name>Goal 2 - Hello</name>
+		<category>
+			<name>Goals</name>
+			<order>25</order>
+			<id>Goals_Goals</id>
+		</category>
+		<subcategory />
+		<module>CoreHome</module>
+		<action>renderReportWidgetContainer</action>
+		<order>4</order>
+		<parameters>
+			<module>CoreHome</module>
+			<action>renderReportWidgetContainer</action>
+			<containerId>Goals_Goals2</containerId>
+		</parameters>
+		<widget_url>?module=CoreHome&amp;action=renderReportWidgetContainer&amp;containerId=Goals_Goals2</widget_url>
+		<uniqueId>widgetCoreHomerenderReportWidgetContainercontainerIdGoals_Goals2</uniqueId>
 		<layout />
 		<isContainer>1</isContainer>
 	</row>
@@ -1820,32 +1820,6 @@
 		<isReport>1</isReport>
 	</row>
 	<row>
-		<name>Data tables</name>
-		<category>
-			<name>UI Framework</name>
-			<order>90</order>
-			<id>ExampleUI_UiFramework</id>
-		</category>
-		<subcategory>
-			<name>Bar graph</name>
-			<order>99</order>
-			<id>Bar graph</id>
-		</subcategory>
-		<module>ExampleUI</module>
-		<action>getTemperatures</action>
-		<order>210</order>
-		<parameters>
-			<module>ExampleUI</module>
-			<action>getTemperatures</action>
-			<forceView>1</forceView>
-			<viewDataTable>graphVerticalBar</viewDataTable>
-		</parameters>
-		<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=graphVerticalBar</widget_url>
-		<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTablegraphVerticalBar</uniqueId>
-		<viewDataTable>graphVerticalBar</viewDataTable>
-		<isReport>1</isReport>
-	</row>
-	<row>
 		<name>Treemap example</name>
 		<category>
 			<name>UI Framework</name>
@@ -1872,29 +1846,55 @@
 		<isReport>1</isReport>
 	</row>
 	<row>
-		<name>Temperatures evolution over time</name>
+		<name>Data tables</name>
 		<category>
 			<name>UI Framework</name>
 			<order>90</order>
 			<id>ExampleUI_UiFramework</id>
 		</category>
 		<subcategory>
-			<name>Sparklines</name>
+			<name>Bar graph</name>
 			<order>99</order>
-			<id>Sparklines</id>
+			<id>Bar graph</id>
 		</subcategory>
 		<module>ExampleUI</module>
-		<action>getTemperaturesEvolution</action>
-		<order>211</order>
+		<action>getTemperatures</action>
+		<order>210</order>
 		<parameters>
 			<module>ExampleUI</module>
-			<action>getTemperaturesEvolution</action>
+			<action>getTemperatures</action>
 			<forceView>1</forceView>
-			<viewDataTable>sparklines</viewDataTable>
+			<viewDataTable>graphVerticalBar</viewDataTable>
 		</parameters>
-		<widget_url>?module=ExampleUI&amp;action=getTemperaturesEvolution&amp;forceView=1&amp;viewDataTable=sparklines</widget_url>
-		<uniqueId>widgetExampleUIgetTemperaturesEvolutionmoduleExampleUIactiongetTemperaturesEvolutionforceView1viewDataTablesparklines</uniqueId>
-		<viewDataTable>sparklines</viewDataTable>
+		<widget_url>?module=ExampleUI&amp;action=getTemperatures&amp;forceView=1&amp;viewDataTable=graphVerticalBar</widget_url>
+		<uniqueId>widgetExampleUIgetTemperaturesmoduleExampleUIactiongetTemperaturesforceView1viewDataTablegraphVerticalBar</uniqueId>
+		<viewDataTable>graphVerticalBar</viewDataTable>
+		<isReport>1</isReport>
+	</row>
+	<row>
+		<name>Pie graph</name>
+		<category>
+			<name>UI Framework</name>
+			<order>90</order>
+			<id>ExampleUI_UiFramework</id>
+		</category>
+		<subcategory>
+			<name>Pie graph</name>
+			<order>99</order>
+			<id>Pie graph</id>
+		</subcategory>
+		<module>ExampleUI</module>
+		<action>getPlanetRatios</action>
+		<order>212</order>
+		<parameters>
+			<module>ExampleUI</module>
+			<action>getPlanetRatios</action>
+			<forceView>0</forceView>
+			<viewDataTable>graphPie</viewDataTable>
+		</parameters>
+		<widget_url>?module=ExampleUI&amp;action=getPlanetRatios&amp;forceView=0&amp;viewDataTable=graphPie</widget_url>
+		<uniqueId>widgetExampleUIgetPlanetRatiosmoduleExampleUIactiongetPlanetRatiosforceView0viewDataTablegraphPie</uniqueId>
+		<viewDataTable>graphPie</viewDataTable>
 		<isReport>1</isReport>
 	</row>
 	<row>
@@ -1928,55 +1928,29 @@
 		<isReport>1</isReport>
 	</row>
 	<row>
-		<name>Pie graph</name>
+		<name>Temperatures evolution over time</name>
 		<category>
 			<name>UI Framework</name>
 			<order>90</order>
 			<id>ExampleUI_UiFramework</id>
 		</category>
 		<subcategory>
-			<name>Pie graph</name>
+			<name>Sparklines</name>
 			<order>99</order>
-			<id>Pie graph</id>
+			<id>Sparklines</id>
 		</subcategory>
 		<module>ExampleUI</module>
-		<action>getPlanetRatios</action>
-		<order>212</order>
+		<action>getTemperaturesEvolution</action>
+		<order>211</order>
 		<parameters>
 			<module>ExampleUI</module>
-			<action>getPlanetRatios</action>
-			<forceView>0</forceView>
-			<viewDataTable>graphPie</viewDataTable>
+			<action>getTemperaturesEvolution</action>
+			<forceView>1</forceView>
+			<viewDataTable>sparklines</viewDataTable>
 		</parameters>
-		<widget_url>?module=ExampleUI&amp;action=getPlanetRatios&amp;forceView=0&amp;viewDataTable=graphPie</widget_url>
-		<uniqueId>widgetExampleUIgetPlanetRatiosmoduleExampleUIactiongetPlanetRatiosforceView0viewDataTablegraphPie</uniqueId>
-		<viewDataTable>graphPie</viewDataTable>
-		<isReport>1</isReport>
-	</row>
-	<row>
-		<name>Advanced tag cloud: with logos and links</name>
-		<category>
-			<name>UI Framework</name>
-			<order>90</order>
-			<id>ExampleUI_UiFramework</id>
-		</category>
-		<subcategory>
-			<name>Tag clouds</name>
-			<order>99</order>
-			<id>Tag clouds</id>
-		</subcategory>
-		<module>ExampleUI</module>
-		<action>getPlanetRatiosWithLogos</action>
-		<order>213</order>
-		<parameters>
-			<module>ExampleUI</module>
-			<action>getPlanetRatiosWithLogos</action>
-			<forceView>0</forceView>
-			<viewDataTable>cloud</viewDataTable>
-		</parameters>
-		<widget_url>?module=ExampleUI&amp;action=getPlanetRatiosWithLogos&amp;forceView=0&amp;viewDataTable=cloud</widget_url>
-		<uniqueId>widgetExampleUIgetPlanetRatiosWithLogosmoduleExampleUIactiongetPlanetRatiosWithLogosforceView0viewDataTablecloud</uniqueId>
-		<viewDataTable>cloud</viewDataTable>
+		<widget_url>?module=ExampleUI&amp;action=getTemperaturesEvolution&amp;forceView=1&amp;viewDataTable=sparklines</widget_url>
+		<uniqueId>widgetExampleUIgetTemperaturesEvolutionmoduleExampleUIactiongetTemperaturesEvolutionforceView1viewDataTablesparklines</uniqueId>
+		<viewDataTable>sparklines</viewDataTable>
 		<isReport>1</isReport>
 	</row>
 	<row>
@@ -2006,94 +1980,30 @@
 		<isReport>1</isReport>
 	</row>
 	<row>
-		<name>SEO Rankings</name>
+		<name>Advanced tag cloud: with logos and links</name>
 		<category>
-			<name>SEO</name>
-			<order>99</order>
-			<id>SEO</id>
+			<name>UI Framework</name>
+			<order>90</order>
+			<id>ExampleUI_UiFramework</id>
 		</category>
-		<subcategory />
-		<module>SEO</module>
-		<action>getRank</action>
-		<order>99</order>
-		<parameters>
-			<module>SEO</module>
-			<action>getRank</action>
-		</parameters>
-		<widget_url>?module=SEO&amp;action=getRank</widget_url>
-		<uniqueId>widgetSEOgetRank</uniqueId>
-	</row>
-	<row>
-		<name>Support Piwik!</name>
-		<category>
-			<name>Example Widgets</name>
+		<subcategory>
+			<name>Tag clouds</name>
 			<order>99</order>
-			<id>Example Widgets</id>
-		</category>
-		<subcategory />
-		<module>CoreHome</module>
-		<action>getDonateForm</action>
-		<order>5</order>
+			<id>Tag clouds</id>
+		</subcategory>
+		<module>ExampleUI</module>
+		<action>getPlanetRatiosWithLogos</action>
+		<order>213</order>
 		<parameters>
-			<module>CoreHome</module>
-			<action>getDonateForm</action>
+			<module>ExampleUI</module>
+			<action>getPlanetRatiosWithLogos</action>
+			<forceView>0</forceView>
+			<viewDataTable>cloud</viewDataTable>
 		</parameters>
-		<widget_url>?module=CoreHome&amp;action=getDonateForm</widget_url>
-		<uniqueId>widgetCoreHomegetDonateForm</uniqueId>
-	</row>
-	<row>
-		<name>Piwik Changelog</name>
-		<category>
-			<name>Example Widgets</name>
-			<order>99</order>
-			<id>Example Widgets</id>
-		</category>
-		<subcategory />
-		<module>ExampleRssWidget</module>
-		<action>rssChangelog</action>
-		<order>99</order>
-		<parameters>
-			<module>ExampleRssWidget</module>
-			<action>rssChangelog</action>
-		</parameters>
-		<widget_url>?module=ExampleRssWidget&amp;action=rssChangelog</widget_url>
-		<uniqueId>widgetExampleRssWidgetrssChangelog</uniqueId>
-	</row>
-	<row>
-		<name>Example Widget Name</name>
-		<category>
-			<name>Example Widgets</name>
-			<order>99</order>
-			<id>Example Widgets</id>
-		</category>
-		<subcategory />
-		<module>ExamplePlugin</module>
-		<action>myExampleWidget</action>
-		<order>99</order>
-		<parameters>
-			<module>ExamplePlugin</module>
-			<action>myExampleWidget</action>
-		</parameters>
-		<widget_url>?module=ExamplePlugin&amp;action=myExampleWidget</widget_url>
-		<uniqueId>widgetExamplePluginmyExampleWidget</uniqueId>
-	</row>
-	<row>
-		<name>Welcome!</name>
-		<category>
-			<name>Example Widgets</name>
-			<order>99</order>
-			<id>Example Widgets</id>
-		</category>
-		<subcategory />
-		<module>CoreHome</module>
-		<action>getPromoVideo</action>
-		<order>10</order>
-		<parameters>
-			<module>CoreHome</module>
-			<action>getPromoVideo</action>
-		</parameters>
-		<widget_url>?module=CoreHome&amp;action=getPromoVideo</widget_url>
-		<uniqueId>widgetCoreHomegetPromoVideo</uniqueId>
+		<widget_url>?module=ExampleUI&amp;action=getPlanetRatiosWithLogos&amp;forceView=0&amp;viewDataTable=cloud</widget_url>
+		<uniqueId>widgetExampleUIgetPlanetRatiosWithLogosmoduleExampleUIactiongetPlanetRatiosWithLogosforceView0viewDataTablecloud</uniqueId>
+		<viewDataTable>cloud</viewDataTable>
+		<isReport>1</isReport>
 	</row>
 	<row>
 		<name>Movers and Shakers</name>
@@ -2114,6 +2024,60 @@
 		<uniqueId>widgetInsightsgetOverallMoversAndShakers</uniqueId>
 	</row>
 	<row>
+		<name>SEO Rankings</name>
+		<category>
+			<name>SEO</name>
+			<order>99</order>
+			<id>SEO</id>
+		</category>
+		<subcategory />
+		<module>SEO</module>
+		<action>getRank</action>
+		<order>99</order>
+		<parameters>
+			<module>SEO</module>
+			<action>getRank</action>
+		</parameters>
+		<widget_url>?module=SEO&amp;action=getRank</widget_url>
+		<uniqueId>widgetSEOgetRank</uniqueId>
+	</row>
+	<row>
+		<name>Piwik Changelog</name>
+		<category>
+			<name>Example Widgets</name>
+			<order>99</order>
+			<id>Example Widgets</id>
+		</category>
+		<subcategory />
+		<module>ExampleRssWidget</module>
+		<action>rssChangelog</action>
+		<order>99</order>
+		<parameters>
+			<module>ExampleRssWidget</module>
+			<action>rssChangelog</action>
+		</parameters>
+		<widget_url>?module=ExampleRssWidget&amp;action=rssChangelog</widget_url>
+		<uniqueId>widgetExampleRssWidgetrssChangelog</uniqueId>
+	</row>
+	<row>
+		<name>Support Piwik!</name>
+		<category>
+			<name>Example Widgets</name>
+			<order>99</order>
+			<id>Example Widgets</id>
+		</category>
+		<subcategory />
+		<module>CoreHome</module>
+		<action>getDonateForm</action>
+		<order>5</order>
+		<parameters>
+			<module>CoreHome</module>
+			<action>getDonateForm</action>
+		</parameters>
+		<widget_url>?module=CoreHome&amp;action=getDonateForm</widget_url>
+		<uniqueId>widgetCoreHomegetDonateForm</uniqueId>
+	</row>
+	<row>
 		<name>Top Keywords for Page URL</name>
 		<category>
 			<name>SEO</name>
@@ -2130,6 +2094,42 @@
 		</parameters>
 		<widget_url>?module=Referrers&amp;action=getKeywordsForPage</widget_url>
 		<uniqueId>widgetReferrersgetKeywordsForPage</uniqueId>
+	</row>
+	<row>
+		<name>Welcome!</name>
+		<category>
+			<name>Example Widgets</name>
+			<order>99</order>
+			<id>Example Widgets</id>
+		</category>
+		<subcategory />
+		<module>CoreHome</module>
+		<action>getPromoVideo</action>
+		<order>10</order>
+		<parameters>
+			<module>CoreHome</module>
+			<action>getPromoVideo</action>
+		</parameters>
+		<widget_url>?module=CoreHome&amp;action=getPromoVideo</widget_url>
+		<uniqueId>widgetCoreHomegetPromoVideo</uniqueId>
+	</row>
+	<row>
+		<name>Example Widget Name</name>
+		<category>
+			<name>Example Widgets</name>
+			<order>99</order>
+			<id>Example Widgets</id>
+		</category>
+		<subcategory />
+		<module>ExamplePlugin</module>
+		<action>myExampleWidget</action>
+		<order>99</order>
+		<parameters>
+			<module>ExamplePlugin</module>
+			<action>myExampleWidget</action>
+		</parameters>
+		<widget_url>?module=ExamplePlugin&amp;action=myExampleWidget</widget_url>
+		<uniqueId>widgetExamplePluginmyExampleWidget</uniqueId>
 	</row>
 	<row>
 		<name>Piwik.org Blog</name>

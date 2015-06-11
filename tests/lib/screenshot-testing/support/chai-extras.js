@@ -179,6 +179,7 @@ function capture(screenName, compareAgainst, selector, pageSetupFn, comparisonTh
     } catch (ex) {
         var err = new Error(ex.message);
         err.stack = ex.message;
+        logErrorMessage(err.stack);
         done(err);
     }
 }
@@ -253,6 +254,7 @@ function compareContents(compareAgainst, pageSetupFn, done) {
     } catch (ex) {
         var err = new Error(ex.message);
         err.stack = ex.message;
+        logErrorMessage(err.stack);
         done(err);
     }
 }

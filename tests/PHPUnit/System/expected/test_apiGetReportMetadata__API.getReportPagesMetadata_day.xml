@@ -2753,7 +2753,7 @@
 		<uniqueId>Goals_Goals.Goal 1 - Thank you</uniqueId>
 		<category>
 			<name>Goals</name>
-			<order>20</order>
+			<order>25</order>
 			<id>Goals_Goals</id>
 		</category>
 		<subcategory>
@@ -2814,14 +2814,14 @@
 					<row>
 						<name>Referrer Type</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getReferrerType</action>
@@ -2842,14 +2842,14 @@
 					<row>
 						<name>Keywords</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getKeywords</action>
@@ -2870,14 +2870,14 @@
 					<row>
 						<name>Search Engines</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getSearchEngines</action>
@@ -2898,14 +2898,14 @@
 					<row>
 						<name>Websites</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getWebsites</action>
@@ -2926,14 +2926,14 @@
 					<row>
 						<name>Campaigns</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getCampaigns</action>
@@ -2954,14 +2954,14 @@
 					<row>
 						<name>Visits to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
@@ -2982,14 +2982,14 @@
 					<row>
 						<name>Days to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
@@ -3008,44 +3008,16 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Country</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCountry</action>
@@ -3066,14 +3038,14 @@
 					<row>
 						<name>Continent</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getContinent</action>
@@ -3094,14 +3066,14 @@
 					<row>
 						<name>Region</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getRegion</action>
@@ -3122,14 +3094,14 @@
 					<row>
 						<name>City</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCity</action>
@@ -3150,14 +3122,14 @@
 					<row>
 						<name>Visits by Server Time</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>VisitTime</module>
 						<action>getVisitInformationPerServerTime</action>
@@ -3175,6 +3147,34 @@
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</category>
+						<subcategory>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
 				</widgets>
 			</row>
 		</widgets>
@@ -3183,7 +3183,7 @@
 		<uniqueId>Goals_Goals.Goal 2 - Hello</uniqueId>
 		<category>
 			<name>Goals</name>
-			<order>20</order>
+			<order>25</order>
 			<id>Goals_Goals</id>
 		</category>
 		<subcategory>
@@ -3244,14 +3244,14 @@
 					<row>
 						<name>Referrer Type</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getReferrerType</action>
@@ -3272,14 +3272,14 @@
 					<row>
 						<name>Keywords</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getKeywords</action>
@@ -3300,14 +3300,14 @@
 					<row>
 						<name>Search Engines</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getSearchEngines</action>
@@ -3328,14 +3328,14 @@
 					<row>
 						<name>Websites</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getWebsites</action>
@@ -3356,14 +3356,14 @@
 					<row>
 						<name>Campaigns</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getCampaigns</action>
@@ -3384,14 +3384,14 @@
 					<row>
 						<name>Visits to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
@@ -3412,14 +3412,14 @@
 					<row>
 						<name>Days to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
@@ -3438,44 +3438,16 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Country</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCountry</action>
@@ -3496,14 +3468,14 @@
 					<row>
 						<name>Continent</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getContinent</action>
@@ -3524,14 +3496,14 @@
 					<row>
 						<name>Region</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getRegion</action>
@@ -3552,14 +3524,14 @@
 					<row>
 						<name>City</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCity</action>
@@ -3580,14 +3552,14 @@
 					<row>
 						<name>Visits by Server Time</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>VisitTime</module>
 						<action>getVisitInformationPerServerTime</action>
@@ -3605,6 +3577,34 @@
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</category>
+						<subcategory>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
 				</widgets>
 			</row>
 		</widgets>
@@ -3613,7 +3613,7 @@
 		<uniqueId>Goals_Goals.triggered js</uniqueId>
 		<category>
 			<name>Goals</name>
-			<order>20</order>
+			<order>25</order>
 			<id>Goals_Goals</id>
 		</category>
 		<subcategory>
@@ -3691,14 +3691,14 @@
 					<row>
 						<name>Referrer Type</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getReferrerType</action>
@@ -3719,14 +3719,14 @@
 					<row>
 						<name>Keywords</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getKeywords</action>
@@ -3747,14 +3747,14 @@
 					<row>
 						<name>Search Engines</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getSearchEngines</action>
@@ -3775,14 +3775,14 @@
 					<row>
 						<name>Websites</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getWebsites</action>
@@ -3803,14 +3803,14 @@
 					<row>
 						<name>Campaigns</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getCampaigns</action>
@@ -3831,14 +3831,14 @@
 					<row>
 						<name>Visits to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
@@ -3859,14 +3859,14 @@
 					<row>
 						<name>Days to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
@@ -3885,44 +3885,16 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Country</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCountry</action>
@@ -3943,14 +3915,14 @@
 					<row>
 						<name>Continent</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getContinent</action>
@@ -3971,14 +3943,14 @@
 					<row>
 						<name>Region</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getRegion</action>
@@ -3999,14 +3971,14 @@
 					<row>
 						<name>City</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCity</action>
@@ -4027,14 +3999,14 @@
 					<row>
 						<name>Visits by Server Time</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>VisitTime</module>
 						<action>getVisitInformationPerServerTime</action>
@@ -4052,6 +4024,34 @@
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</category>
+						<subcategory>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
 				</widgets>
 			</row>
 		</widgets>
@@ -4060,7 +4060,7 @@
 		<uniqueId>Goals_Goals.General_Overview</uniqueId>
 		<category>
 			<name>Goals</name>
-			<order>20</order>
+			<order>25</order>
 			<id>Goals_Goals</id>
 		</category>
 		<subcategory>
@@ -4120,14 +4120,14 @@
 					<row>
 						<name>Referrer Type</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getReferrerType</action>
@@ -4148,14 +4148,14 @@
 					<row>
 						<name>Keywords</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getKeywords</action>
@@ -4176,14 +4176,14 @@
 					<row>
 						<name>Search Engines</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getSearchEngines</action>
@@ -4204,14 +4204,14 @@
 					<row>
 						<name>Websites</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getWebsites</action>
@@ -4232,14 +4232,14 @@
 					<row>
 						<name>Campaigns</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getCampaigns</action>
@@ -4260,14 +4260,14 @@
 					<row>
 						<name>Visits to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
@@ -4288,14 +4288,14 @@
 					<row>
 						<name>Days to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
@@ -4314,44 +4314,16 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Country</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCountry</action>
@@ -4372,14 +4344,14 @@
 					<row>
 						<name>Continent</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getContinent</action>
@@ -4400,14 +4372,14 @@
 					<row>
 						<name>Region</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getRegion</action>
@@ -4428,14 +4400,14 @@
 					<row>
 						<name>City</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCity</action>
@@ -4456,14 +4428,14 @@
 					<row>
 						<name>Visits by Server Time</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>VisitTime</module>
 						<action>getVisitInformationPerServerTime</action>
@@ -4478,6 +4450,34 @@
 						</parameters>
 						<widget_url>?module=VisitTime&amp;action=getVisitInformationPerServerTime&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetVisitTimegetVisitInformationPerServerTimemoduleVisitTimeactiongetVisitInformationPerServerTimeforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</category>
+						<subcategory>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -4588,14 +4588,14 @@
 					<row>
 						<name>Referrer Type</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getReferrerType</action>
@@ -4616,14 +4616,14 @@
 					<row>
 						<name>Keywords</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getKeywords</action>
@@ -4644,14 +4644,14 @@
 					<row>
 						<name>Search Engines</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getSearchEngines</action>
@@ -4672,14 +4672,14 @@
 					<row>
 						<name>Websites</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getWebsites</action>
@@ -4700,14 +4700,14 @@
 					<row>
 						<name>Campaigns</name>
 						<category>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View goals by Referrers</name>
+							<name>Goals by Referrers</name>
 							<order>99</order>
-							<id>View goals by Referrers</id>
+							<id>Goals by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getCampaigns</action>
@@ -4728,14 +4728,14 @@
 					<row>
 						<name>Visits to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
@@ -4756,14 +4756,14 @@
 					<row>
 						<name>Days to Conversion</name>
 						<category>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visit</name>
+							<name>Goals engagement</name>
 							<order>99</order>
-							<id>View goals by Visit</id>
+							<id>Goals engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
@@ -4782,44 +4782,16 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View goals by Visitors</name>
-							<order>99</order>
-							<id>View goals by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Country</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCountry</action>
@@ -4840,14 +4812,14 @@
 					<row>
 						<name>Continent</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getContinent</action>
@@ -4868,14 +4840,14 @@
 					<row>
 						<name>Region</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getRegion</action>
@@ -4896,14 +4868,14 @@
 					<row>
 						<name>City</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCity</action>
@@ -4924,14 +4896,14 @@
 					<row>
 						<name>Visits by Server Time</name>
 						<category>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</category>
 						<subcategory>
-							<name>View goals by Visitors</name>
+							<name>Goals by User location</name>
 							<order>99</order>
-							<id>View goals by Visitors</id>
+							<id>Goals by User location</id>
 						</subcategory>
 						<module>VisitTime</module>
 						<action>getVisitInformationPerServerTime</action>
@@ -4946,6 +4918,34 @@
 						</parameters>
 						<widget_url>?module=VisitTime&amp;action=getVisitInformationPerServerTime&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetVisitTimegetVisitInformationPerServerTimemoduleVisitTimeactiongetVisitInformationPerServerTimeforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</category>
+						<subcategory>
+							<name>Goals by User attribute</name>
+							<order>99</order>
+							<id>Goals by User attribute</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsdocumentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -5011,7 +5011,7 @@
 		<uniqueId>Goals_Goals.Goals_ManageGoals</uniqueId>
 		<category>
 			<name>Goals</name>
-			<order>20</order>
+			<order>25</order>
 			<id>Goals_Goals</id>
 		</category>
 		<subcategory>
@@ -5050,7 +5050,7 @@
 		<uniqueId>Goals_Ecommerce.Goals_EcommerceLog</uniqueId>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory>
@@ -5089,7 +5089,7 @@
 		<uniqueId>Goals_Ecommerce.General_Overview</uniqueId>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory>
@@ -5174,7 +5174,7 @@
 		<uniqueId>Goals_Ecommerce.Goals_Products</uniqueId>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory>
@@ -5547,7 +5547,7 @@
 		<uniqueId>Goals_Ecommerce.Ecommerce_Sales</uniqueId>
 		<category>
 			<name>Ecommerce</name>
-			<order>25</order>
+			<order>20</order>
 			<id>Goals_Ecommerce</id>
 		</category>
 		<subcategory>
@@ -5575,14 +5575,14 @@
 					<row>
 						<name>Referrer Type</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getReferrerType</action>
@@ -5604,14 +5604,14 @@
 					<row>
 						<name>Keywords</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getKeywords</action>
@@ -5633,14 +5633,14 @@
 					<row>
 						<name>Search Engines</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getSearchEngines</action>
@@ -5662,14 +5662,14 @@
 					<row>
 						<name>Websites</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getWebsites</action>
@@ -5691,14 +5691,14 @@
 					<row>
 						<name>Campaigns</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getCampaigns</action>
@@ -5720,14 +5720,14 @@
 					<row>
 						<name>Visits to Conversion</name>
 						<category>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
@@ -5749,14 +5749,14 @@
 					<row>
 						<name>Days to Conversion</name>
 						<category>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
@@ -5776,45 +5776,16 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<abandonedCarts>0</abandonedCarts>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Country</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCountry</action>
@@ -5836,14 +5807,14 @@
 					<row>
 						<name>Continent</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getContinent</action>
@@ -5865,14 +5836,14 @@
 					<row>
 						<name>Region</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getRegion</action>
@@ -5894,14 +5865,14 @@
 					<row>
 						<name>City</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCity</action>
@@ -5923,14 +5894,14 @@
 					<row>
 						<name>Visits by Server Time</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>VisitTime</module>
 						<action>getVisitInformationPerServerTime</action>
@@ -5946,6 +5917,35 @@
 						</parameters>
 						<widget_url>?module=VisitTime&amp;action=getVisitInformationPerServerTime&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetVisitTimegetVisitInformationPerServerTimemoduleVisitTimeactiongetVisitInformationPerServerTimeforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>Sales by User attribute</name>
+							<order>99</order>
+							<id>Sales by User attribute</id>
+						</category>
+						<subcategory>
+							<name>Sales by User attribute</name>
+							<order>99</order>
+							<id>Sales by User attribute</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<abandonedCarts>0</abandonedCarts>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>
@@ -5970,14 +5970,14 @@
 					<row>
 						<name>Referrer Type</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getReferrerType</action>
@@ -5999,14 +5999,14 @@
 					<row>
 						<name>Keywords</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getKeywords</action>
@@ -6028,14 +6028,14 @@
 					<row>
 						<name>Search Engines</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getSearchEngines</action>
@@ -6057,14 +6057,14 @@
 					<row>
 						<name>Websites</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getWebsites</action>
@@ -6086,14 +6086,14 @@
 					<row>
 						<name>Campaigns</name>
 						<category>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</category>
 						<subcategory>
-							<name>View sales by Referrers</name>
+							<name>Sales by Referrers</name>
 							<order>99</order>
-							<id>View sales by Referrers</id>
+							<id>Sales by Referrers</id>
 						</subcategory>
 						<module>Referrers</module>
 						<action>getCampaigns</action>
@@ -6115,14 +6115,14 @@
 					<row>
 						<name>Visits to Conversion</name>
 						<category>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getVisitsUntilConversion</action>
@@ -6144,14 +6144,14 @@
 					<row>
 						<name>Days to Conversion</name>
 						<category>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visit</name>
+							<name>Sales engagement</name>
 							<order>99</order>
-							<id>View sales by Visit</id>
+							<id>Sales engagement</id>
 						</subcategory>
 						<module>Goals</module>
 						<action>getDaysToConversion</action>
@@ -6171,45 +6171,16 @@
 						<isReport>1</isReport>
 					</row>
 					<row>
-						<name>Custom Variables</name>
-						<category>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</category>
-						<subcategory>
-							<name>View sales by Visitors</name>
-							<order>99</order>
-							<id>View sales by Visitors</id>
-						</subcategory>
-						<module>CustomVariables</module>
-						<action>getCustomVariables</action>
-						<order>110</order>
-						<parameters>
-							<module>CustomVariables</module>
-							<action>getCustomVariables</action>
-							<forceView>0</forceView>
-							<viewDataTable>tableGoals</viewDataTable>
-							<abandonedCarts>0</abandonedCarts>
-							<documentationForGoalsPage>1</documentationForGoalsPage>
-							<idGoal>0</idGoal>
-						</parameters>
-						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
-						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
-						<viewDataTable>tableGoals</viewDataTable>
-						<isReport>1</isReport>
-					</row>
-					<row>
 						<name>Country</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCountry</action>
@@ -6231,14 +6202,14 @@
 					<row>
 						<name>Continent</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getContinent</action>
@@ -6260,14 +6231,14 @@
 					<row>
 						<name>Region</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getRegion</action>
@@ -6289,14 +6260,14 @@
 					<row>
 						<name>City</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>UserCountry</module>
 						<action>getCity</action>
@@ -6318,14 +6289,14 @@
 					<row>
 						<name>Visits by Server Time</name>
 						<category>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</category>
 						<subcategory>
-							<name>View sales by Visitors</name>
+							<name>Sales by User location</name>
 							<order>99</order>
-							<id>View sales by Visitors</id>
+							<id>Sales by User location</id>
 						</subcategory>
 						<module>VisitTime</module>
 						<action>getVisitInformationPerServerTime</action>
@@ -6341,6 +6312,35 @@
 						</parameters>
 						<widget_url>?module=VisitTime&amp;action=getVisitInformationPerServerTime&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
 						<uniqueId>widgetVisitTimegetVisitInformationPerServerTimemoduleVisitTimeactiongetVisitInformationPerServerTimeforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
+						<viewDataTable>tableGoals</viewDataTable>
+						<isReport>1</isReport>
+					</row>
+					<row>
+						<name>Custom Variables</name>
+						<category>
+							<name>Sales by User attribute</name>
+							<order>99</order>
+							<id>Sales by User attribute</id>
+						</category>
+						<subcategory>
+							<name>Sales by User attribute</name>
+							<order>99</order>
+							<id>Sales by User attribute</id>
+						</subcategory>
+						<module>CustomVariables</module>
+						<action>getCustomVariables</action>
+						<order>110</order>
+						<parameters>
+							<module>CustomVariables</module>
+							<action>getCustomVariables</action>
+							<forceView>0</forceView>
+							<viewDataTable>tableGoals</viewDataTable>
+							<abandonedCarts>0</abandonedCarts>
+							<documentationForGoalsPage>1</documentationForGoalsPage>
+							<idGoal>0</idGoal>
+						</parameters>
+						<widget_url>?module=CustomVariables&amp;action=getCustomVariables&amp;forceView=0&amp;viewDataTable=tableGoals&amp;abandonedCarts=0&amp;documentationForGoalsPage=1&amp;idGoal=0</widget_url>
+						<uniqueId>widgetCustomVariablesgetCustomVariablesmoduleCustomVariablesactiongetCustomVariablesforceView0viewDataTabletableGoalsabandonedCarts0documentationForGoalsPage1idGoal0</uniqueId>
 						<viewDataTable>tableGoals</viewDataTable>
 						<isReport>1</isReport>
 					</row>

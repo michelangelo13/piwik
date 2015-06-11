@@ -515,10 +515,8 @@ PageRenderer.prototype._getImageLoadingCount = function () {
 PageRenderer.prototype._waitForNextEvent = function (events, callback, i, waitTime) {
 
     function isEmpty(obj) {
-        var hasOwnProperty = Object.prototype.hasOwnProperty;
-
         for (var key in obj) {
-            if (hasOwnProperty.call(obj, key)) return false;
+            if (Object.prototype.hasOwnProperty.call(obj, key)) return false;
         }
 
         return true;
@@ -527,7 +525,11 @@ PageRenderer.prototype._waitForNextEvent = function (events, callback, i, waitTi
     var self = this;
     setTimeout(function () {
         if (!self._isLoading && !self._isInitializing && !self._isNavigationRequested
-            && (isEmpty(self._resourcesRequested) || !self._getAjaxRequestCount())) {
+            && (
+                isEmpty(self._resourcesRequested)
+                || (!self._getAjaxRequestCount() && !self._getImageLoadingCount())
+                )
+            ) {
             // why isEmpty(self._resourcesRequested) || !self._getAjaxRequestCount()) ?
             // if someone sends a sync XHR we only get a resoruceRequested event but not a responseEvent so we need to
             // fall back for ajaxRequestCount as a safety net. See https://github.com/ariya/phantomjs/issues/11284
@@ -602,11 +604,13 @@ PageRenderer.prototype._setupWebpageEvents = function () {
     };
 
     this.webpage.onResourceReceived = function (response) {
-        if (response.stage !== 'start'){
+        var isStartStage = (response.stage === 'start');
+
+        if (!isStartStage){
             self._removeUrlFromQueue(response.url);
         }
 
-        if (VERBOSE || response.status >= 400) {
+        if (VERBOSE || (isStartStage && response.status >= 400)) {
             var message = 'Response (#' + response.id + ', stage "' + response.stage + '", size "' +
                 response.bodySize + '", status "' + response.status + '"): ' + response.url;
             self._logMessage(message);
@@ -617,8 +621,15 @@ PageRenderer.prototype._setupWebpageEvents = function () {
         self._removeUrlFromQueue(resourceError.url);
 
         if (!self.aborted) {
-            self._logMessage('Unable to load resource (#' + resourceError.id + 'URL:' + resourceError.url + ')');
-            self._logMessage('Error code: ' + resourceError.errorCode + '. Description: ' + resourceError.errorString);
+            var isUrlThatWeCareAbout = function (url)
+            {
+                return -1 === url.indexOf('proxy/misc/user/favicon.png?r=') && -1 === url.indexOf('proxy/misc/user/logo.png?r=');
+            }
+
+            if (isUrlThatWeCareAbout(resourceError.url)) {
+                self._logMessage('Unable to load resource (#' + resourceError.id + 'URL:' + resourceError.url + ')');
+                self._logMessage('Error code: ' + resourceError.errorCode + '. Description: ' + resourceError.errorString);
+            }
         }
     };
 

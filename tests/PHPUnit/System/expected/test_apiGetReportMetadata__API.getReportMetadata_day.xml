@@ -1822,6 +1822,189 @@
 		<uniqueId>Referrers_getCampaigns</uniqueId>
 	</row>
 	<row>
+		<category>Ecommerce</category>
+		<subcategory>Products</subcategory>
+		<name>Product SKU</name>
+		<module>Goals</module>
+		<action>getItemsSku</action>
+		<dimension>Product SKU</dimension>
+		<metrics>
+			<revenue>Product Revenue</revenue>
+			<quantity>Quantity</quantity>
+			<orders>Unique Purchases</orders>
+			<nb_visits>Visits</nb_visits>
+		</metrics>
+		<processedMetrics>
+			<avg_price>Average Price</avg_price>
+			<avg_quantity>Average Quantity</avg_quantity>
+			<conversion_rate>Product Conversion Rate</conversion_rate>
+		</processedMetrics>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsSku&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
+		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsSku&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
+		<uniqueId>Goals_getItemsSku</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<subcategory>Products</subcategory>
+		<name>Product Name</name>
+		<module>Goals</module>
+		<action>getItemsName</action>
+		<dimension>Product Name</dimension>
+		<metrics>
+			<revenue>Product Revenue</revenue>
+			<quantity>Quantity</quantity>
+			<orders>Unique Purchases</orders>
+			<nb_visits>Visits</nb_visits>
+		</metrics>
+		<processedMetrics>
+			<avg_price>Average Price</avg_price>
+			<avg_quantity>Average Quantity</avg_quantity>
+			<conversion_rate>Product Conversion Rate</conversion_rate>
+		</processedMetrics>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsName&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
+		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsName&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
+		<uniqueId>Goals_getItemsName</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<subcategory>Products</subcategory>
+		<name>Product Category</name>
+		<module>Goals</module>
+		<action>getItemsCategory</action>
+		<dimension>Product Category</dimension>
+		<metrics>
+			<revenue>Product Revenue</revenue>
+			<quantity>Quantity</quantity>
+			<orders>Unique Purchases</orders>
+			<nb_visits>Visits</nb_visits>
+		</metrics>
+		<processedMetrics>
+			<avg_price>Average Price</avg_price>
+			<avg_quantity>Average Quantity</avg_quantity>
+			<conversion_rate>Product Conversion Rate</conversion_rate>
+		</processedMetrics>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsCategory&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
+		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsCategory&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
+		<uniqueId>Goals_getItemsCategory</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<name>Ecommerce Orders</name>
+		<module>Goals</module>
+		<action>get</action>
+		<parameters>
+			<idGoal>ecommerceOrder</idGoal>
+		</parameters>
+		<metrics>
+			<nb_conversions>Ecommerce Orders</nb_conversions>
+			<nb_visits_converted>Visits with Conversions</nb_visits_converted>
+			<conversion_rate>Conversion Rate</conversion_rate>
+			<revenue>Revenue</revenue>
+			<revenue_subtotal>Subtotal</revenue_subtotal>
+			<revenue_tax>Tax</revenue_tax>
+			<revenue_shipping>Shipping</revenue_shipping>
+			<revenue_discount>Discount</revenue_discount>
+			<items>Purchased Products</items>
+		</metrics>
+		<metricsDocumentation>
+			<conversion_rate>The percentage of visits that triggered a goal conversion.</conversion_rate>
+		</metricsDocumentation>
+		<processedMetrics>
+			<avg_order_revenue>Average Order Value</avg_order_revenue>
+		</processedMetrics>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphUrl>
+		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
+		<uniqueId>Goals_get_idGoal--ecommerceOrder</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<name>Ecommerce Orders - Visits to Conversion</name>
+		<module>Goals</module>
+		<action>getVisitsUntilConversion</action>
+		<parameters>
+			<idGoal>ecommerceOrder</idGoal>
+		</parameters>
+		<dimension>Visits to Conversion</dimension>
+		<metrics>
+			<nb_conversions>Conversions</nb_conversions>
+		</metrics>
+		<constantRowsCount>1</constantRowsCount>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getVisitsUntilConversion&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
+		<uniqueId>Goals_getVisitsUntilConversion_idGoal--ecommerceOrder</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<name>Ecommerce Orders - Days to Conversion</name>
+		<module>Goals</module>
+		<action>getDaysToConversion</action>
+		<parameters>
+			<idGoal>ecommerceOrder</idGoal>
+		</parameters>
+		<dimension>Days to Conversion</dimension>
+		<metrics>
+			<nb_conversions>Conversions</nb_conversions>
+		</metrics>
+		<constantRowsCount>1</constantRowsCount>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getDaysToConversion&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
+		<uniqueId>Goals_getDaysToConversion_idGoal--ecommerceOrder</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<name>Abandoned Carts</name>
+		<module>Goals</module>
+		<action>get</action>
+		<parameters>
+			<idGoal>ecommerceAbandonedCart</idGoal>
+		</parameters>
+		<metrics>
+			<nb_conversions>Abandoned Carts</nb_conversions>
+			<conversion_rate>Conversion Rate</conversion_rate>
+			<revenue>Revenue left in cart</revenue>
+			<items>Products left in cart</items>
+		</metrics>
+		<metricsDocumentation>
+			<conversion_rate>The percentage of visits that triggered a goal conversion.</conversion_rate>
+		</metricsDocumentation>
+		<processedMetrics>
+			<avg_order_revenue>Average Order Value</avg_order_revenue>
+		</processedMetrics>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphUrl>
+		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
+		<uniqueId>Goals_get_idGoal--ecommerceAbandonedCart</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<name>Abandoned Carts - Visits to Conversion</name>
+		<module>Goals</module>
+		<action>getVisitsUntilConversion</action>
+		<parameters>
+			<idGoal>ecommerceAbandonedCart</idGoal>
+		</parameters>
+		<dimension>Visits to Conversion</dimension>
+		<metrics>
+			<nb_conversions>Conversions</nb_conversions>
+		</metrics>
+		<constantRowsCount>1</constantRowsCount>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getVisitsUntilConversion&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
+		<uniqueId>Goals_getVisitsUntilConversion_idGoal--ecommerceAbandonedCart</uniqueId>
+	</row>
+	<row>
+		<category>Ecommerce</category>
+		<name>Abandoned Carts - Days to Conversion</name>
+		<module>Goals</module>
+		<action>getDaysToConversion</action>
+		<parameters>
+			<idGoal>ecommerceAbandonedCart</idGoal>
+		</parameters>
+		<dimension>Days to Conversion</dimension>
+		<metrics>
+			<nb_conversions>Conversions</nb_conversions>
+		</metrics>
+		<constantRowsCount>1</constantRowsCount>
+		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getDaysToConversion&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
+		<uniqueId>Goals_getDaysToConversion_idGoal--ecommerceAbandonedCart</uniqueId>
+	</row>
+	<row>
 		<category>Goals</category>
 		<name>Goals</name>
 		<module>Goals</module>
@@ -2045,189 +2228,6 @@
 		<constantRowsCount>1</constantRowsCount>
 		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getDaysToConversion&amp;idGoal=3&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
 		<uniqueId>Goals_getDaysToConversion_idGoal--3</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<subcategory>Products</subcategory>
-		<name>Product SKU</name>
-		<module>Goals</module>
-		<action>getItemsSku</action>
-		<dimension>Product SKU</dimension>
-		<metrics>
-			<revenue>Product Revenue</revenue>
-			<quantity>Quantity</quantity>
-			<orders>Unique Purchases</orders>
-			<nb_visits>Visits</nb_visits>
-		</metrics>
-		<processedMetrics>
-			<avg_price>Average Price</avg_price>
-			<avg_quantity>Average Quantity</avg_quantity>
-			<conversion_rate>Product Conversion Rate</conversion_rate>
-		</processedMetrics>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsSku&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
-		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsSku&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
-		<uniqueId>Goals_getItemsSku</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<subcategory>Products</subcategory>
-		<name>Product Name</name>
-		<module>Goals</module>
-		<action>getItemsName</action>
-		<dimension>Product Name</dimension>
-		<metrics>
-			<revenue>Product Revenue</revenue>
-			<quantity>Quantity</quantity>
-			<orders>Unique Purchases</orders>
-			<nb_visits>Visits</nb_visits>
-		</metrics>
-		<processedMetrics>
-			<avg_price>Average Price</avg_price>
-			<avg_quantity>Average Quantity</avg_quantity>
-			<conversion_rate>Product Conversion Rate</conversion_rate>
-		</processedMetrics>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsName&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
-		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsName&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
-		<uniqueId>Goals_getItemsName</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<subcategory>Products</subcategory>
-		<name>Product Category</name>
-		<module>Goals</module>
-		<action>getItemsCategory</action>
-		<dimension>Product Category</dimension>
-		<metrics>
-			<revenue>Product Revenue</revenue>
-			<quantity>Quantity</quantity>
-			<orders>Unique Purchases</orders>
-			<nb_visits>Visits</nb_visits>
-		</metrics>
-		<processedMetrics>
-			<avg_price>Average Price</avg_price>
-			<avg_quantity>Average Quantity</avg_quantity>
-			<conversion_rate>Product Conversion Rate</conversion_rate>
-		</processedMetrics>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsCategory&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
-		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getItemsCategory&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
-		<uniqueId>Goals_getItemsCategory</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<name>Ecommerce Orders</name>
-		<module>Goals</module>
-		<action>get</action>
-		<parameters>
-			<idGoal>ecommerceOrder</idGoal>
-		</parameters>
-		<metrics>
-			<nb_conversions>Ecommerce Orders</nb_conversions>
-			<nb_visits_converted>Visits with Conversions</nb_visits_converted>
-			<conversion_rate>Conversion Rate</conversion_rate>
-			<revenue>Revenue</revenue>
-			<revenue_subtotal>Subtotal</revenue_subtotal>
-			<revenue_tax>Tax</revenue_tax>
-			<revenue_shipping>Shipping</revenue_shipping>
-			<revenue_discount>Discount</revenue_discount>
-			<items>Purchased Products</items>
-		</metrics>
-		<metricsDocumentation>
-			<conversion_rate>The percentage of visits that triggered a goal conversion.</conversion_rate>
-		</metricsDocumentation>
-		<processedMetrics>
-			<avg_order_revenue>Average Order Value</avg_order_revenue>
-		</processedMetrics>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphUrl>
-		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
-		<uniqueId>Goals_get_idGoal--ecommerceOrder</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<name>Ecommerce Orders - Visits to Conversion</name>
-		<module>Goals</module>
-		<action>getVisitsUntilConversion</action>
-		<parameters>
-			<idGoal>ecommerceOrder</idGoal>
-		</parameters>
-		<dimension>Visits to Conversion</dimension>
-		<metrics>
-			<nb_conversions>Conversions</nb_conversions>
-		</metrics>
-		<constantRowsCount>1</constantRowsCount>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getVisitsUntilConversion&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
-		<uniqueId>Goals_getVisitsUntilConversion_idGoal--ecommerceOrder</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<name>Ecommerce Orders - Days to Conversion</name>
-		<module>Goals</module>
-		<action>getDaysToConversion</action>
-		<parameters>
-			<idGoal>ecommerceOrder</idGoal>
-		</parameters>
-		<dimension>Days to Conversion</dimension>
-		<metrics>
-			<nb_conversions>Conversions</nb_conversions>
-		</metrics>
-		<constantRowsCount>1</constantRowsCount>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getDaysToConversion&amp;idGoal=ecommerceOrder&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
-		<uniqueId>Goals_getDaysToConversion_idGoal--ecommerceOrder</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<name>Abandoned Carts</name>
-		<module>Goals</module>
-		<action>get</action>
-		<parameters>
-			<idGoal>ecommerceAbandonedCart</idGoal>
-		</parameters>
-		<metrics>
-			<nb_conversions>Abandoned Carts</nb_conversions>
-			<conversion_rate>Conversion Rate</conversion_rate>
-			<revenue>Revenue left in cart</revenue>
-			<items>Products left in cart</items>
-		</metrics>
-		<metricsDocumentation>
-			<conversion_rate>The percentage of visits that triggered a goal conversion.</conversion_rate>
-		</metricsDocumentation>
-		<processedMetrics>
-			<avg_order_revenue>Average Order Value</avg_order_revenue>
-		</processedMetrics>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphUrl>
-		<imageGraphEvolutionUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=get&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2008-12-06,2009-01-04</imageGraphEvolutionUrl>
-		<uniqueId>Goals_get_idGoal--ecommerceAbandonedCart</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<name>Abandoned Carts - Visits to Conversion</name>
-		<module>Goals</module>
-		<action>getVisitsUntilConversion</action>
-		<parameters>
-			<idGoal>ecommerceAbandonedCart</idGoal>
-		</parameters>
-		<dimension>Visits to Conversion</dimension>
-		<metrics>
-			<nb_conversions>Conversions</nb_conversions>
-		</metrics>
-		<constantRowsCount>1</constantRowsCount>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getVisitsUntilConversion&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
-		<uniqueId>Goals_getVisitsUntilConversion_idGoal--ecommerceAbandonedCart</uniqueId>
-	</row>
-	<row>
-		<category>Ecommerce</category>
-		<name>Abandoned Carts - Days to Conversion</name>
-		<module>Goals</module>
-		<action>getDaysToConversion</action>
-		<parameters>
-			<idGoal>ecommerceAbandonedCart</idGoal>
-		</parameters>
-		<dimension>Days to Conversion</dimension>
-		<metrics>
-			<nb_conversions>Conversions</nb_conversions>
-		</metrics>
-		<constantRowsCount>1</constantRowsCount>
-		<imageGraphUrl>index.php?module=API&amp;method=ImageGraph.get&amp;idSite=1&amp;apiModule=Goals&amp;apiAction=getDaysToConversion&amp;idGoal=ecommerceAbandonedCart&amp;period=day&amp;date=2009-01-04</imageGraphUrl>
-		<uniqueId>Goals_getDaysToConversion_idGoal--ecommerceAbandonedCart</uniqueId>
 	</row>
 	<row>
 		<category>UI Framework</category>

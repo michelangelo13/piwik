@@ -29,7 +29,7 @@
                         currentScope,
                         currentElement,
                         httpCanceler,
-                        contentNode = element.find('.widgetContent');
+                        contentNode = element.find('.theWidgetContent');
 
                     var cleanupLastWidgetContent = function() {
                         if (currentElement) {

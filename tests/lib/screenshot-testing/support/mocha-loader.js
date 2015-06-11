@@ -66,7 +66,7 @@ phantom.injectJs(mochaPath);
 // setup mocha (add stdout.write function & configure style + reporter)
 mocha.constructor.process.stdout = {
     write: function (data) {
-        console.warn(data);
+        fs.write("/dev/stdout", data, "w");
     }
 };
 

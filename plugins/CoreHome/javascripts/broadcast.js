@@ -196,6 +196,8 @@ var broadcast = {
 
         ajaxUrl = ajaxUrl.replace(/^\?|&#/, '');
 
+        var $location = angular.element(document).injector().get('$location');
+
         var params_vals = ajaxUrl.split("&");
         for (var i = 0; i < params_vals.length; i++) {
             $location.search(i, params_vals[i]);

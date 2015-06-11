@@ -87,6 +87,7 @@ function capture(screenName, compareAgainst, selector, pageSetupFn, comparisonTh
             if (err) {
                 var indent = "     ";
                 err.stack = err.message + "\n" + indent + getPageLogsString(pageRenderer.pageLogs, indent);
+                console.log(err.stack);
 
                 done(err);
                 return;
@@ -119,6 +120,7 @@ function capture(screenName, compareAgainst, selector, pageSetupFn, comparisonTh
 
                 // stack traces are useless so we avoid the clutter w/ this
                 error.stack = failureInfo;
+                console.log(failureInfo);
 
                 done(error);
             };

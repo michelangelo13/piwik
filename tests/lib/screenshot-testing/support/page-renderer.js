@@ -553,7 +553,6 @@ PageRenderer.prototype._setCorrectViewportSize = function () {
 };
 
 PageRenderer.prototype._logMessage = function (message) {
-    console.log(message);
     this.pageLogs.push(message);
 };
 
@@ -571,8 +570,6 @@ PageRenderer.prototype._removeUrlFromQueue = function (url) {
         if (0 === this._resourcesRequested[url]) {
             delete this._resourcesRequested[url];
         }
-    } else {
-        console.log('ignored: ' + url)
     }
 };
 

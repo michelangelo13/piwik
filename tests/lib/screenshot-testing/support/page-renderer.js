@@ -21,7 +21,6 @@ var PageRenderer = function (baseUrl) {
     this.currentFrame = null;
 
     this.defaultWaitTime = 1000;
-    this._failedLoading = false;
     this._isLoading = false;
     this._isInitializing = false;
     this._isNavigationRequested = false;
@@ -191,7 +190,6 @@ PageRenderer.prototype._load = function (url, callback) {
 
     this._requestedUrl   = url;
     this._isInitializing = true;
-    this._failedLoading  = false;
     this._resourcesRequested = {};
 
     var self = this;
@@ -528,9 +526,7 @@ PageRenderer.prototype._waitForNextEvent = function (events, callback, i, waitTi
 
     var self = this;
     setTimeout(function () {
-        if (self._failedLoading) {
-            self._executeEvents(events, callback, i + 1);
-        } else if (!self._isLoading && !self._isInitializing && !self._isNavigationRequested
+        if (!self._isLoading && !self._isInitializing && !self._isNavigationRequested
             && (isEmpty(self._resourcesRequested) || !self._getAjaxRequestCount())) {
             // why isEmpty(self._resourcesRequested) || !self._getAjaxRequestCount()) ?
             // if someone sends a sync XHR we only get a resoruceRequested event but not a responseEvent so we need to
@@ -672,9 +668,8 @@ PageRenderer.prototype._setupWebpageEvents = function () {
     }
 
     this.webpage.onLoadFinished = function (status) {
-        if (status !== 'success') {
-            self._logMessage('Page did not load successfully: ' + status);
-            self._failedLoading = true;
+        if (status !== 'success' && VERBOSE) {
+            self._logMessage('Page did not load successfully (it could be on purpose if a tests wants to test this behaviour): ' + status);
         }
 
         self._isInitializing = false;

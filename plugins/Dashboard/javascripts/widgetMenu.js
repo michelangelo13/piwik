@@ -77,7 +77,7 @@ widgetsHelper.getAvailableWidgets = function (callback) {
                 }
             }
         );
-        ajaxRequest.send();
+        ajaxRequest.send(true);
     }
 
     if (callback) {

@@ -87,11 +87,13 @@
             dashboardLayout = null;
             dashboardId = dashboardIdToLoad;
 
-            var element = $('[piwik-dashboard]');
-            var scope = angular.element(element).scope();
-            scope.$apply(function() {
-                element.attr('dashboardid', dashboardIdToLoad);
-            });
+            setTimeout(function () {
+                var element = $('[piwik-dashboard]');
+                var scope = angular.element(element).scope();
+                scope.$apply(function() {
+                    element.attr('dashboardid', dashboardIdToLoad);
+                });
+            }, 0);
 
             return this;
         },

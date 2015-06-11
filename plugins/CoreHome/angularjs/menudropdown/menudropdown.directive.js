@@ -47,7 +47,10 @@
                         });
                     }
                     scope.$eval('view.showItems = false');
-                    scope.$apply();
+
+                    setTimeout(function () {
+                        scope.$apply();
+                    }, 0);
 
                     element.find('.item').removeClass('active');
                     $self.addClass('active');
